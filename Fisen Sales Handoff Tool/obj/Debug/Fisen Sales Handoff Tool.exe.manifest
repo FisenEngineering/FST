@@ -4,7 +4,7 @@
   <description asmv2:iconFile="fsticon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Fisen Sales Handoff Tool" version="1.0.0.32" publicKeyToken="4A29048F3E5C04D8" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Fisen Sales Handoff Tool" version="1.0.0.32" publicKeyToken="68DF0FAFFB469033" language="neutral" processorArchitecture="msil" />
     <commandLine file="Fisen Sales Handoff Tool.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Fisen Sales Handoff Tool.exe" size="692144">
-      <assemblyIdentity name="Fisen Sales Handoff Tool" version="1.0.0.32" publicKeyToken="4A29048F3E5C04D8" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Fisen Sales Handoff Tool" version="1.0.0.32" publicKeyToken="68DF0FAFFB469033" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1ZGQ5pXdLXSjQcZOuOvW9tdOgimtrIGVd/MDXaTXv6E=</dsig:DigestValue>
+        <dsig:DigestValue>vHiDHTSJeP/9HSxxF4fTOVG7hWHZDhol81BNpviIes0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

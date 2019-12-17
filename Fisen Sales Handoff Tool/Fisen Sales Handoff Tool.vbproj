@@ -84,7 +84,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Fisen Sales Handoff Tool_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Fisen Sales Handoff Tool_2_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -266,6 +266,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Fisen Sales Handoff Tool_1_TemporaryKey.pfx" />
+    <None Include="Fisen Sales Handoff Tool_2_TemporaryKey.pfx" />
     <None Include="Fisen Sales Handoff Tool_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
