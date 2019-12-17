@@ -1,0 +1,28 @@
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\bin\Debug\Fisen Sales Handoff Tool.exe.config
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\bin\Debug\Fisen Sales Handoff Tool.exe
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\bin\Debug\Fisen Sales Handoff Tool.pdb
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\bin\Debug\Fisen Sales Handoff Tool.xml
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmMain.resources
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmUPGEntry.resources
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.Resources.resources
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.vbproj.GenerateResource.Cache
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.exe
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.xml
+c:\users\jlevine\documents\visual studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.pdb
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmUPGFIOPEntry.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\bin\Debug\Fisen Sales Handoff Tool.exe.manifest
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\bin\Debug\Fisen Sales Handoff Tool.application
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.exe.manifest
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.application
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmYPALUnitEntry.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmHWCoil.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmMHG_R.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmYVAAEntryPage1.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmYVAAUnitEntry.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmYLAAUnitEntry.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmYLAAEntryPage1.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmPointLoads.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmRFan.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmUPGFieldInstalled.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen_Sales_Handoff_Tool.frmLCVAV.resources
+C:\Users\jlevine\Documents\Visual Studio 2017\Projects\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool\obj\Debug\Fisen Sales Handoff Tool.vbprojAssemblyReference.cache
