@@ -31,3 +31,6 @@ Installing PFX Key to Strong Name CSP<br>
     4a. The key is found in your C:\Users\{YOURUSERNAME}\source\repos\fisen-sale-handoff-tool\Fisen Sales Handoff Tool<br>
     4b. The VS key number is found in the build error notes in VS. Not sure how else to find it. <br>
 5. Once prompted enter the password: fisen123<br>
+
+
+Source: https://social.msdn.microsoft.com/Forums/aspnet/en-US/cc7a38fc-dde0-4280-815c-cdd6ddbd992d/the-key-file-may-be-password-protected-to-correct-this-try-to-import-the-certificate-again-or?forum=tfsbuild<br>
