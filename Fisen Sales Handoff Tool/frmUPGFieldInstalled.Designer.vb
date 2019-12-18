@@ -68,6 +68,7 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox42 = New System.Windows.Forms.CheckBox()
         Me.CheckBox43 = New System.Windows.Forms.CheckBox()
         Me.CheckBox44 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox45 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -529,12 +530,23 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox44.Text = "Smoke Detector Kit"
         Me.CheckBox44.UseVisualStyleBackColor = True
         '
+        'CheckBox45
+        '
+        Me.CheckBox45.AutoSize = True
+        Me.CheckBox45.Location = New System.Drawing.Point(799, 265)
+        Me.CheckBox45.Name = "CheckBox45"
+        Me.CheckBox45.Size = New System.Drawing.Size(107, 17)
+        Me.CheckBox45.TabIndex = 93
+        Me.CheckBox45.Text = "Never Check Me"
+        Me.CheckBox45.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox45)
         Me.Controls.Add(Me.CheckBox44)
         Me.Controls.Add(Me.CheckBox43)
         Me.Controls.Add(Me.CheckBox42)
@@ -636,4 +648,5 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox42 As CheckBox
     Friend WithEvents CheckBox43 As CheckBox
     Friend WithEvents CheckBox44 As CheckBox
+    Friend WithEvents CheckBox45 As CheckBox
 End Class
