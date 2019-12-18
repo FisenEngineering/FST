@@ -9,15 +9,25 @@ Install FST on your machine (Steps may vary):
     2d. Once there edit the "Data" values to "Enabled". <br>
     2e. Exit the Registry Editor.<br>
     2f. Try running the exe again.<br>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-Source for install issue workaround: https://superuser.com/questions/1252575/unable-to-install-clickonce-application-due-to-security-settings-windows-10
-    
+  
+Source for install issue workaround: https://superuser.com/questions/1252575/unable-to-install-clickonce-application-due-to-security-settings-windows-10<br>
+
+
+
+Install the .pfx key to your machine.<br>
+1. Open "C:\Users\{YOURUSERNAME}\source\repos\fisen-sale-handoff-tool\Fisen Sales Handoff Tool\Fisen Sales Handoff Tool_2_TemporaryKey.pfx"<br>
+2. Right click and select "Install PFX"<br>
+3. Select "Local Machine"<br>
+4. File Import just click next<br>
+5. Password: fisen123<br>
+6. Certificate Store just click next<br>
+7. Click Finish<br>
+
+Installing PFX Key to Strong Name CSP<br>
+1. Try building and running FST<br>
+2. If it does error out you need to add the PFX to the Strong Name CSP<br>
+3. Open the "Developer Command Prompt for VS 2019" Under the Visual Studios folder under the start command<br>
+4. On the CMD run "sn -i mykey.pfx VS_KEY_XXXXXXXXXXXXXXXX"<br>
+    4a. The key is found in your C:\Users\{YOURUSERNAME}\source\repos\fisen-sale-handoff-tool\Fisen Sales Handoff Tool<br>
+    4b. The VS key number is found in the build error notes in VS. Not sure how else to find it. <br>
+5. Once prompted enter the password: fisen123<br>
