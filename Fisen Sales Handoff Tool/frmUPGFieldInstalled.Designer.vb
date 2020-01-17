@@ -69,6 +69,7 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox43 = New System.Windows.Forms.CheckBox()
         Me.CheckBox44 = New System.Windows.Forms.CheckBox()
         Me.CheckBox45 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox46 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -343,11 +344,11 @@ Partial Class frmUPGFieldInstalled
         'CheckBox25
         '
         Me.CheckBox25.AutoSize = True
-        Me.CheckBox25.Location = New System.Drawing.Point(445, 173)
+        Me.CheckBox25.Location = New System.Drawing.Point(799, 362)
         Me.CheckBox25.Name = "CheckBox25"
-        Me.CheckBox25.Size = New System.Drawing.Size(153, 17)
+        Me.CheckBox25.Size = New System.Drawing.Size(177, 17)
         Me.CheckBox25.TabIndex = 74
-        Me.CheckBox25.Text = "Temp and Humidity Sensor"
+        Me.CheckBox25.Text = "Wall Temp and Humidity Sensor"
         Me.CheckBox25.UseVisualStyleBackColor = True
         '
         'CheckBox26
@@ -473,7 +474,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox39
         '
         Me.CheckBox39.AutoSize = True
-        Me.CheckBox39.Location = New System.Drawing.Point(12, 408)
+        Me.CheckBox39.Location = New System.Drawing.Point(799, 385)
         Me.CheckBox39.Name = "CheckBox39"
         Me.CheckBox39.Size = New System.Drawing.Size(212, 17)
         Me.CheckBox39.TabIndex = 87
@@ -503,7 +504,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox42
         '
         Me.CheckBox42.AutoSize = True
-        Me.CheckBox42.Location = New System.Drawing.Point(277, 362)
+        Me.CheckBox42.Location = New System.Drawing.Point(799, 408)
         Me.CheckBox42.Name = "CheckBox42"
         Me.CheckBox42.Size = New System.Drawing.Size(140, 17)
         Me.CheckBox42.TabIndex = 90
@@ -513,7 +514,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox43
         '
         Me.CheckBox43.AutoSize = True
-        Me.CheckBox43.Location = New System.Drawing.Point(277, 385)
+        Me.CheckBox43.Location = New System.Drawing.Point(12, 408)
         Me.CheckBox43.Name = "CheckBox43"
         Me.CheckBox43.Size = New System.Drawing.Size(221, 17)
         Me.CheckBox43.TabIndex = 91
@@ -540,12 +541,23 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox45.Text = "Never Check Me"
         Me.CheckBox45.UseVisualStyleBackColor = True
         '
+        'CheckBox46
+        '
+        Me.CheckBox46.AutoSize = True
+        Me.CheckBox46.Location = New System.Drawing.Point(12, 339)
+        Me.CheckBox46.Name = "CheckBox46"
+        Me.CheckBox46.Size = New System.Drawing.Size(197, 17)
+        Me.CheckBox46.TabIndex = 94
+        Me.CheckBox46.Text = "Programmable Wall Stat, MS/TP N2"
+        Me.CheckBox46.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox46)
         Me.Controls.Add(Me.CheckBox45)
         Me.Controls.Add(Me.CheckBox44)
         Me.Controls.Add(Me.CheckBox43)
@@ -649,4 +661,5 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox43 As CheckBox
     Friend WithEvents CheckBox44 As CheckBox
     Friend WithEvents CheckBox45 As CheckBox
+    Friend WithEvents CheckBox46 As CheckBox
 End Class
