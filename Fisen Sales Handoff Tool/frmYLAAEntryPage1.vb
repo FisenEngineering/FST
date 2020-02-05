@@ -32,4 +32,27 @@
     Private Sub txtAmbient_6_Leave(sender As Object, e As EventArgs) Handles txtAmbient_6.Leave
         txtSoundAmbient6.Text = txtAmbient_6.Text
     End Sub
+
+    Private Sub cmdFIOPS_Click(sender As Object, e As EventArgs) Handles cmdFIOPS.Click
+        Dim CanX As Boolean
+        frmYLAAFIOPS.ShowDialog()
+        CanX = frmYLAAFIOPS.pCancelled
+        If CanX Then
+            pCancelled = True
+            Me.Hide()
+        End If
+        cmdFieldInst.Enabled = True
+    End Sub
+
+    Private Sub cmdFieldInst_Click(sender As Object, e As EventArgs) Handles cmdFieldInst.Click
+        Dim CanX As Boolean
+        frmYLAAFieldInstalled.ShowDialog()
+        CanX = frmYLAAFieldInstalled.pCancelled
+        If CanX Then
+            pCancelled = True
+            Me.Hide()
+        End If
+
+        cmdOK.Enabled = True
+    End Sub
 End Class

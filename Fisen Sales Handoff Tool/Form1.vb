@@ -244,6 +244,7 @@ Public Class frmMain
 
         UnitWriter.WriteStartElement("FIOPS")
         If UPGUnit() Then Call WriteUPGFIOPS(UnitWriter, myXMLSettings)
+        If Family() = "YLAA" Then Call WriteYLAAFIOPS(UnitWriter, myXMLSettings)
         UnitWriter.WriteEndElement() 'FIOPS
 
         '***
@@ -357,6 +358,21 @@ Public Class frmMain
             End If
 
 
+        Next
+
+
+    End Sub
+
+    Private Sub WriteYLAAFIOPS(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
+
+        Dim cControl As CheckBox
+        For Each cControl In frmUPGFIOPEntry.Controls.OfType(Of CheckBox)
+
+            If cControl.Checked Then
+                lUnitWriter.WriteStartElement("FIOPItem")
+                lUnitWriter.WriteString(cControl.Text)
+                lUnitWriter.WriteEndElement()
+            End If
         Next
 
 

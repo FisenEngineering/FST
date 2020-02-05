@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>35</ApplicationRevision>
+    <ApplicationRevision>36</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -174,6 +174,18 @@
     <Compile Include="frmYLAAEntryPage1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmYLAAFieldInstalled.Designer.vb">
+      <DependentUpon>frmYLAAFieldInstalled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmYLAAFieldInstalled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYLAAFIOPS.Designer.vb">
+      <DependentUpon>frmYLAAFIOPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmYLAAFIOPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmYLAAUnitEntry.Designer.vb">
       <DependentUpon>frmYLAAUnitEntry.vb</DependentUpon>
     </Compile>
@@ -244,6 +256,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmYLAAEntryPage1.resx">
       <DependentUpon>frmYLAAEntryPage1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYLAAFieldInstalled.resx">
+      <DependentUpon>frmYLAAFieldInstalled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYLAAFIOPS.resx">
+      <DependentUpon>frmYLAAFIOPS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmYLAAUnitEntry.resx">
       <DependentUpon>frmYLAAUnitEntry.vb</DependentUpon>

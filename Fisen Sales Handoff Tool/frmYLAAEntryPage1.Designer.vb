@@ -50,6 +50,7 @@ Partial Class frmYLAAEntryPage1
         Me.cmdCancel = New System.Windows.Forms.Button()
         Me.cmdOK = New System.Windows.Forms.Button()
         Me.grpSound = New System.Windows.Forms.GroupBox()
+        Me.lstSoundDescription = New System.Windows.Forms.ListBox()
         Me.txtSPLLWA_6 = New System.Windows.Forms.TextBox()
         Me.txtSoundAmbient6 = New System.Windows.Forms.TextBox()
         Me.txtSoundAmbient5 = New System.Windows.Forms.TextBox()
@@ -163,7 +164,8 @@ Partial Class frmYLAAEntryPage1
         Me.txtAmbient_1 = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.txtNotes = New System.Windows.Forms.TextBox()
-        Me.lstSoundDescription = New System.Windows.Forms.ListBox()
+        Me.cmdFIOPS = New System.Windows.Forms.Button()
+        Me.cmdFieldInst = New System.Windows.Forms.Button()
         Me.GroupBox3.SuspendLayout()
         Me.grpSound.SuspendLayout()
         Me.grpPartLoad.SuspendLayout()
@@ -430,6 +432,7 @@ Partial Class frmYLAAEntryPage1
         '
         'cmdOK
         '
+        Me.cmdOK.Enabled = False
         Me.cmdOK.Location = New System.Drawing.Point(678, 761)
         Me.cmdOK.Name = "cmdOK"
         Me.cmdOK.Size = New System.Drawing.Size(90, 32)
@@ -522,6 +525,15 @@ Partial Class frmYLAAEntryPage1
         Me.grpSound.TabIndex = 2
         Me.grpSound.TabStop = False
         Me.grpSound.Text = "Sound Power Levels"
+        '
+        'lstSoundDescription
+        '
+        Me.lstSoundDescription.FormattingEnabled = True
+        Me.lstSoundDescription.Items.AddRange(New Object() {"Sound Power Levels", "Average Sound Pressure Levels at 30 Feet"})
+        Me.lstSoundDescription.Location = New System.Drawing.Point(6, 49)
+        Me.lstSoundDescription.Name = "lstSoundDescription"
+        Me.lstSoundDescription.Size = New System.Drawing.Size(333, 82)
+        Me.lstSoundDescription.TabIndex = 101
         '
         'txtSPLLWA_6
         '
@@ -1574,14 +1586,24 @@ Partial Class frmYLAAEntryPage1
         Me.txtNotes.TabIndex = 0
         Me.txtNotes.Text = "-"
         '
-        'lstSoundDescription
+        'cmdFIOPS
         '
-        Me.lstSoundDescription.FormattingEnabled = True
-        Me.lstSoundDescription.Items.AddRange(New Object() {"Sound Power Levels", "Average Sound Pressure Levels at 30 Feet"})
-        Me.lstSoundDescription.Location = New System.Drawing.Point(6, 49)
-        Me.lstSoundDescription.Name = "lstSoundDescription"
-        Me.lstSoundDescription.Size = New System.Drawing.Size(333, 82)
-        Me.lstSoundDescription.TabIndex = 101
+        Me.cmdFIOPS.Location = New System.Drawing.Point(486, 761)
+        Me.cmdFIOPS.Name = "cmdFIOPS"
+        Me.cmdFIOPS.Size = New System.Drawing.Size(90, 32)
+        Me.cmdFIOPS.TabIndex = 45
+        Me.cmdFIOPS.Text = "FIOPS"
+        Me.cmdFIOPS.UseVisualStyleBackColor = True
+        '
+        'cmdFieldInst
+        '
+        Me.cmdFieldInst.Enabled = False
+        Me.cmdFieldInst.Location = New System.Drawing.Point(582, 761)
+        Me.cmdFieldInst.Name = "cmdFieldInst"
+        Me.cmdFieldInst.Size = New System.Drawing.Size(90, 32)
+        Me.cmdFieldInst.TabIndex = 46
+        Me.cmdFieldInst.Text = "Field Inst."
+        Me.cmdFieldInst.UseVisualStyleBackColor = True
         '
         'frmYLAAEntryPage1
         '
@@ -1589,6 +1611,8 @@ Partial Class frmYLAAEntryPage1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(876, 805)
         Me.ControlBox = False
+        Me.Controls.Add(Me.cmdFieldInst)
+        Me.Controls.Add(Me.cmdFIOPS)
         Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.txtNotes)
         Me.Controls.Add(Me.grpPartLoad)
@@ -1753,4 +1777,6 @@ Partial Class frmYLAAEntryPage1
     Friend WithEvents Label28 As Label
     Friend WithEvents txtNotes As TextBox
     Friend WithEvents lstSoundDescription As ListBox
+    Friend WithEvents cmdFIOPS As Button
+    Friend WithEvents cmdFieldInst As Button
 End Class
