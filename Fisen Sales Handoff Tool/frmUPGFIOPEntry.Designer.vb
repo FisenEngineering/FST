@@ -107,6 +107,7 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox80 = New System.Windows.Forms.CheckBox()
         Me.CheckBox81 = New System.Windows.Forms.CheckBox()
         Me.CheckBox82 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox83 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -183,7 +184,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(608, 348)
+        Me.CheckBox6.Location = New System.Drawing.Point(606, 367)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(110, 17)
         Me.CheckBox6.TabIndex = 21
@@ -193,7 +194,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox7
         '
         Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(608, 325)
+        Me.CheckBox7.Location = New System.Drawing.Point(606, 344)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(155, 17)
         Me.CheckBox7.TabIndex = 20
@@ -203,7 +204,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox8
         '
         Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(608, 302)
+        Me.CheckBox8.Location = New System.Drawing.Point(606, 321)
         Me.CheckBox8.Name = "CheckBox8"
         Me.CheckBox8.Size = New System.Drawing.Size(155, 17)
         Me.CheckBox8.TabIndex = 19
@@ -603,7 +604,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox48
         '
         Me.CheckBox48.AutoSize = True
-        Me.CheckBox48.Location = New System.Drawing.Point(608, 394)
+        Me.CheckBox48.Location = New System.Drawing.Point(606, 413)
         Me.CheckBox48.Name = "CheckBox48"
         Me.CheckBox48.Size = New System.Drawing.Size(271, 17)
         Me.CheckBox48.TabIndex = 62
@@ -613,7 +614,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox49
         '
         Me.CheckBox49.AutoSize = True
-        Me.CheckBox49.Location = New System.Drawing.Point(608, 371)
+        Me.CheckBox49.Location = New System.Drawing.Point(606, 390)
         Me.CheckBox49.Name = "CheckBox49"
         Me.CheckBox49.Size = New System.Drawing.Size(116, 17)
         Me.CheckBox49.TabIndex = 63
@@ -883,7 +884,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox76
         '
         Me.CheckBox76.AutoSize = True
-        Me.CheckBox76.Location = New System.Drawing.Point(608, 417)
+        Me.CheckBox76.Location = New System.Drawing.Point(606, 436)
         Me.CheckBox76.Name = "CheckBox76"
         Me.CheckBox76.Size = New System.Drawing.Size(271, 17)
         Me.CheckBox76.TabIndex = 89
@@ -943,12 +944,22 @@ Partial Class frmUPGFIOPEntry
         'CheckBox82
         '
         Me.CheckBox82.AutoSize = True
-        Me.CheckBox82.Location = New System.Drawing.Point(606, 279)
+        Me.CheckBox82.Location = New System.Drawing.Point(606, 298)
         Me.CheckBox82.Name = "CheckBox82"
         Me.CheckBox82.Size = New System.Drawing.Size(129, 17)
         Me.CheckBox82.TabIndex = 95
         Me.CheckBox82.Text = "2"" Throw Away Filters"
         Me.CheckBox82.UseVisualStyleBackColor = True
+        '
+        'CheckBox83
+        '
+        Me.CheckBox83.AutoSize = True
+        Me.CheckBox83.Location = New System.Drawing.Point(606, 279)
+        Me.CheckBox83.Name = "CheckBox83"
+        Me.CheckBox83.Size = New System.Drawing.Size(129, 17)
+        Me.CheckBox83.TabIndex = 96
+        Me.CheckBox83.Text = "1"" Throw Away Filters"
+        Me.CheckBox83.UseVisualStyleBackColor = True
         '
         'frmUPGFIOPEntry
         '
@@ -957,6 +968,7 @@ Partial Class frmUPGFIOPEntry
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(1080, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox83)
         Me.Controls.Add(Me.CheckBox82)
         Me.Controls.Add(Me.CheckBox81)
         Me.Controls.Add(Me.CheckBox80)
@@ -1135,4 +1147,5 @@ Partial Class frmUPGFIOPEntry
     Friend WithEvents CheckBox80 As CheckBox
     Friend WithEvents CheckBox81 As CheckBox
     Friend WithEvents CheckBox82 As CheckBox
+    Friend WithEvents CheckBox83 As CheckBox
 End Class
