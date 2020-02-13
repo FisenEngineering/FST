@@ -53,6 +53,21 @@ Public Class frmMain
             CanX = frmUPGEntry.pCancelled
         End If
 
+        If optChoice.Checked Then
+            frmUPGEntry.ShowDialog()
+            CanX = frmUPGEntry.pCancelled
+        End If
+
+        If optSelect.Checked Then
+            frmUPGEntry.ShowDialog()
+            CanX = frmUPGEntry.pCancelled
+        End If
+
+        If optPremier.Checked Then
+            frmYPALUnitEntry.ShowDialog()
+            CanX = frmYPALUnitEntry.pCancelled
+        End If
+
         If optSeries100.Checked Then
             frmYPALUnitEntry.ShowDialog()
             CanX = frmYPALUnitEntry.pCancelled
@@ -2462,6 +2477,18 @@ Public Class frmMain
 
         If optSeries100.Checked Then
             RetFam = "Series100"
+        End If
+
+        If optChoice.Checked Then
+            RetFam = "Choice"
+        End If
+
+        If optSelect.Checked Then
+            RetFam = "Select"
+        End If
+
+        If optPremier.Checked Then
+            RetFam = "Premier"
         End If
 
         If optYVAA.Checked Then

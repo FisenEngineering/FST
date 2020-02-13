@@ -75,11 +75,17 @@ Partial Class frmMain
         Me.cmdFieldInst = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtModList = New System.Windows.Forms.TextBox()
+        Me.optChoice = New System.Windows.Forms.RadioButton()
+        Me.optSelect = New System.Windows.Forms.RadioButton()
+        Me.optPremier = New System.Windows.Forms.RadioButton()
         Me.grpUnitStyle.SuspendLayout()
         Me.SuspendLayout()
         '
         'grpUnitStyle
         '
+        Me.grpUnitStyle.Controls.Add(Me.optPremier)
+        Me.grpUnitStyle.Controls.Add(Me.optSelect)
+        Me.grpUnitStyle.Controls.Add(Me.optChoice)
         Me.grpUnitStyle.Controls.Add(Me.chkHydroKit)
         Me.grpUnitStyle.Controls.Add(Me.optOther)
         Me.grpUnitStyle.Controls.Add(Me.optSolution)
@@ -113,7 +119,7 @@ Partial Class frmMain
         'optOther
         '
         Me.optOther.AutoSize = True
-        Me.optOther.Location = New System.Drawing.Point(390, 65)
+        Me.optOther.Location = New System.Drawing.Point(382, 19)
         Me.optOther.Name = "optOther"
         Me.optOther.Size = New System.Drawing.Size(51, 17)
         Me.optOther.TabIndex = 10
@@ -123,7 +129,7 @@ Partial Class frmMain
         'optSolution
         '
         Me.optSolution.AutoSize = True
-        Me.optSolution.Location = New System.Drawing.Point(390, 42)
+        Me.optSolution.Location = New System.Drawing.Point(307, 19)
         Me.optSolution.Name = "optSolution"
         Me.optSolution.Size = New System.Drawing.Size(69, 17)
         Me.optSolution.TabIndex = 9
@@ -133,7 +139,7 @@ Partial Class frmMain
         'optYLAA
         '
         Me.optYLAA.AutoSize = True
-        Me.optYLAA.Location = New System.Drawing.Point(294, 42)
+        Me.optYLAA.Location = New System.Drawing.Point(249, 42)
         Me.optYLAA.Name = "optYLAA"
         Me.optYLAA.Size = New System.Drawing.Size(52, 17)
         Me.optYLAA.TabIndex = 8
@@ -143,7 +149,7 @@ Partial Class frmMain
         'optYCAL
         '
         Me.optYCAL.AutoSize = True
-        Me.optYCAL.Location = New System.Drawing.Point(198, 42)
+        Me.optYCAL.Location = New System.Drawing.Point(249, 19)
         Me.optYCAL.Name = "optYCAL"
         Me.optYCAL.Size = New System.Drawing.Size(52, 17)
         Me.optYCAL.TabIndex = 7
@@ -153,7 +159,7 @@ Partial Class frmMain
         'optYVAA
         '
         Me.optYVAA.AutoSize = True
-        Me.optYVAA.Location = New System.Drawing.Point(102, 42)
+        Me.optYVAA.Location = New System.Drawing.Point(249, 65)
         Me.optYVAA.Name = "optYVAA"
         Me.optYVAA.Size = New System.Drawing.Size(53, 17)
         Me.optYVAA.TabIndex = 6
@@ -163,7 +169,7 @@ Partial Class frmMain
         'optSeries100
         '
         Me.optSeries100.AutoSize = True
-        Me.optSeries100.Location = New System.Drawing.Point(6, 42)
+        Me.optSeries100.Location = New System.Drawing.Point(87, 19)
         Me.optSeries100.Name = "optSeries100"
         Me.optSeries100.Size = New System.Drawing.Size(75, 17)
         Me.optSeries100.TabIndex = 5
@@ -173,7 +179,7 @@ Partial Class frmMain
         'optSeries40
         '
         Me.optSeries40.AutoSize = True
-        Me.optSeries40.Location = New System.Drawing.Point(390, 19)
+        Me.optSeries40.Location = New System.Drawing.Point(6, 111)
         Me.optSeries40.Name = "optSeries40"
         Me.optSeries40.Size = New System.Drawing.Size(69, 17)
         Me.optSeries40.TabIndex = 4
@@ -183,7 +189,7 @@ Partial Class frmMain
         'optSeries20
         '
         Me.optSeries20.AutoSize = True
-        Me.optSeries20.Location = New System.Drawing.Point(294, 19)
+        Me.optSeries20.Location = New System.Drawing.Point(6, 88)
         Me.optSeries20.Name = "optSeries20"
         Me.optSeries20.Size = New System.Drawing.Size(69, 17)
         Me.optSeries20.TabIndex = 3
@@ -193,7 +199,7 @@ Partial Class frmMain
         'optSeries12
         '
         Me.optSeries12.AutoSize = True
-        Me.optSeries12.Location = New System.Drawing.Point(198, 19)
+        Me.optSeries12.Location = New System.Drawing.Point(6, 65)
         Me.optSeries12.Name = "optSeries12"
         Me.optSeries12.Size = New System.Drawing.Size(69, 17)
         Me.optSeries12.TabIndex = 2
@@ -203,7 +209,7 @@ Partial Class frmMain
         'optSeries10
         '
         Me.optSeries10.AutoSize = True
-        Me.optSeries10.Location = New System.Drawing.Point(102, 19)
+        Me.optSeries10.Location = New System.Drawing.Point(6, 42)
         Me.optSeries10.Name = "optSeries10"
         Me.optSeries10.Size = New System.Drawing.Size(69, 17)
         Me.optSeries10.TabIndex = 1
@@ -537,6 +543,36 @@ Partial Class frmMain
         Me.txtModList.Size = New System.Drawing.Size(342, 20)
         Me.txtModList.TabIndex = 11
         '
+        'optChoice
+        '
+        Me.optChoice.AutoSize = True
+        Me.optChoice.Location = New System.Drawing.Point(168, 19)
+        Me.optChoice.Name = "optChoice"
+        Me.optChoice.Size = New System.Drawing.Size(58, 17)
+        Me.optChoice.TabIndex = 12
+        Me.optChoice.Text = "Choice"
+        Me.optChoice.UseVisualStyleBackColor = True
+        '
+        'optSelect
+        '
+        Me.optSelect.AutoSize = True
+        Me.optSelect.Location = New System.Drawing.Point(168, 42)
+        Me.optSelect.Name = "optSelect"
+        Me.optSelect.Size = New System.Drawing.Size(55, 17)
+        Me.optSelect.TabIndex = 13
+        Me.optSelect.Text = "Select"
+        Me.optSelect.UseVisualStyleBackColor = True
+        '
+        'optPremier
+        '
+        Me.optPremier.AutoSize = True
+        Me.optPremier.Location = New System.Drawing.Point(168, 65)
+        Me.optPremier.Name = "optPremier"
+        Me.optPremier.Size = New System.Drawing.Size(60, 17)
+        Me.optPremier.TabIndex = 14
+        Me.optPremier.Text = "Premier"
+        Me.optPremier.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -643,4 +679,7 @@ Partial Class frmMain
     Friend WithEvents cmdFieldInst As Button
     Friend WithEvents Label12 As Label
     Friend WithEvents txtModList As TextBox
+    Friend WithEvents optPremier As RadioButton
+    Friend WithEvents optSelect As RadioButton
+    Friend WithEvents optChoice As RadioButton
 End Class
