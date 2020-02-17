@@ -2738,7 +2738,7 @@ Public Class frmMain
         AOK = True
         MissingFileMessage = "You must choose a unit family."
 
-        AOK = optSeries5.Checked Or optSeries10.Checked Or optSeries20.Checked Or optSeries40.Checked Or optSeries100.Checked Or optSeries12.Checked Or optYVAA.Checked Or optYCAL.Checked Or optYLAA.Checked Or optSolution.Checked Or optOther.Checked
+        AOK = optSeries5.Checked Or optSeries10.Checked Or optSeries20.Checked Or optSeries40.Checked Or optSeries100.Checked Or optSeries12.Checked Or optYVAA.Checked Or optYCAL.Checked Or optYLAA.Checked Or optSolution.Checked Or optOther.Checked Or optChoice.Checked Or optPremier.Checked Or optSelect.Checked
 
         If Not AOK Then
             Dummy = MsgBox(MissingFileMessage, vbOKOnly, "Fisen Sales Handoff Tool")
