@@ -110,6 +110,9 @@ Public Class frmMain
         If optSeries12.Checked Then dummy = True
         If optSeries20.Checked Then dummy = True
         If optSeries40.Checked Then dummy = True
+        If optChoice.Checked Then dummy = True
+        If optSelect.Checked Then dummy = True
+        If optPremier.Checked Then dummy = True
 
         UPGUnit = dummy
 
@@ -2446,6 +2449,19 @@ Public Class frmMain
             RetKing = "Other"
         End If
 
+        If optChoice.Checked Then
+            RetKing = "RTU"
+        End If
+
+        If optPremier.Checked Then
+            RetKing = "RTU"
+        End If
+
+        If optSelect.Checked Then
+            RetKing = "RTU"
+        End If
+
+
         Return RetKing
 
     End Function
@@ -2535,6 +2551,21 @@ Public Class frmMain
             CanX = frmUPGFIOPEntry.pCancelled
         End If
         If optSeries40.Checked Then
+            frmUPGFIOPEntry.ShowDialog()
+            CanX = frmUPGFIOPEntry.pCancelled
+        End If
+
+        If optChoice.Checked Then
+            frmUPGFIOPEntry.ShowDialog()
+            CanX = frmUPGFIOPEntry.pCancelled
+        End If
+
+        If optSelect.Checked Then
+            frmUPGFIOPEntry.ShowDialog()
+            CanX = frmUPGFIOPEntry.pCancelled
+        End If
+
+        If optPremier.Checked Then
             frmUPGFIOPEntry.ShowDialog()
             CanX = frmUPGFIOPEntry.pCancelled
         End If
@@ -3081,6 +3112,23 @@ Public Class frmMain
             frmUPGFieldInstalled.ShowDialog()
             CanX = frmUPGFieldInstalled.pCancelled
         End If
+
+        If optSelect.Checked Then
+            frmUPGFieldInstalled.ShowDialog()
+            CanX = frmUPGFieldInstalled.pCancelled
+        End If
+
+        If optChoice.Checked Then
+            frmUPGFieldInstalled.ShowDialog()
+            CanX = frmUPGFieldInstalled.pCancelled
+        End If
+
+        If optPremier.Checked Then
+            frmUPGFieldInstalled.ShowDialog()
+            CanX = frmUPGFieldInstalled.pCancelled
+        End If
+
+
 
         If CanX Then
             Dummy = MsgBox("User Cancelled.")
