@@ -151,6 +151,7 @@ Partial Class frmYLAAFIOPS
         Me.Controls.Add(Me.cmdOK)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "frmYLAAFIOPS"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmYLAAFIOPS"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -28,6 +28,10 @@
             dummy = MsgBox("Please Enter the chiller's point loads.", vbOKOnly, "Fisen Sales Handoff Tool")
             Exit Sub
         End If
+        frmMain.Show()
+        frmMain.cmdFieldInst.Enabled = False
+        frmMain.cmdFIOPS.Enabled = False
+        frmMain.cmdWriteUnit.Select()
         Me.Hide()
     End Sub
 

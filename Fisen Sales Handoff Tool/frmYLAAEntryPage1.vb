@@ -46,6 +46,7 @@
 
     Private Sub cmdFieldInst_Click(sender As Object, e As EventArgs) Handles cmdFieldInst.Click
         Dim CanX As Boolean
+
         frmYLAAFieldInstalled.ShowDialog()
         CanX = frmYLAAFieldInstalled.pCancelled
         If CanX Then

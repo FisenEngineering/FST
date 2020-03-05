@@ -91,6 +91,7 @@ Partial Class frmYLAAFieldInstalled
         Me.Controls.Add(Me.cmdOK)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "frmYLAAFieldInstalled"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmYLAAFieldInstalled"
         Me.ResumeLayout(False)
         Me.PerformLayout()

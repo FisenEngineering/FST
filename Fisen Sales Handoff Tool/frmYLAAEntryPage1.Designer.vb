@@ -426,7 +426,7 @@ Partial Class frmYLAAEntryPage1
         Me.cmdCancel.Location = New System.Drawing.Point(774, 761)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(90, 32)
-        Me.cmdCancel.TabIndex = 5
+        Me.cmdCancel.TabIndex = 7
         Me.cmdCancel.Text = "Cancel"
         Me.cmdCancel.UseVisualStyleBackColor = True
         '
@@ -436,7 +436,7 @@ Partial Class frmYLAAEntryPage1
         Me.cmdOK.Location = New System.Drawing.Point(678, 761)
         Me.cmdOK.Name = "cmdOK"
         Me.cmdOK.Size = New System.Drawing.Size(90, 32)
-        Me.cmdOK.TabIndex = 4
+        Me.cmdOK.TabIndex = 6
         Me.cmdOK.Text = "OK"
         Me.cmdOK.UseVisualStyleBackColor = True
         '
@@ -1591,7 +1591,7 @@ Partial Class frmYLAAEntryPage1
         Me.cmdFIOPS.Location = New System.Drawing.Point(486, 761)
         Me.cmdFIOPS.Name = "cmdFIOPS"
         Me.cmdFIOPS.Size = New System.Drawing.Size(90, 32)
-        Me.cmdFIOPS.TabIndex = 45
+        Me.cmdFIOPS.TabIndex = 4
         Me.cmdFIOPS.Text = "FIOPS"
         Me.cmdFIOPS.UseVisualStyleBackColor = True
         '
@@ -1601,7 +1601,7 @@ Partial Class frmYLAAEntryPage1
         Me.cmdFieldInst.Location = New System.Drawing.Point(582, 761)
         Me.cmdFieldInst.Name = "cmdFieldInst"
         Me.cmdFieldInst.Size = New System.Drawing.Size(90, 32)
-        Me.cmdFieldInst.TabIndex = 46
+        Me.cmdFieldInst.TabIndex = 5
         Me.cmdFieldInst.Text = "Field Inst."
         Me.cmdFieldInst.UseVisualStyleBackColor = True
         '
