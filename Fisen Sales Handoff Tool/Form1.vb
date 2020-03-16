@@ -2092,6 +2092,10 @@ Public Class frmMain
             lUnitWriter.WriteString(frmUPGEntry.txtHeatLine7.Text)
             lUnitWriter.WriteEndElement()
 
+            lUnitWriter.WriteStartElement("ControlStyle")
+            lUnitWriter.WriteString(frmUPGEntry.txtHeatLine9.Text)
+            lUnitWriter.WriteEndElement()
+
 
         End If
 
