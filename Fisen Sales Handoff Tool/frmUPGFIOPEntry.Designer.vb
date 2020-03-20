@@ -116,6 +116,7 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox89 = New System.Windows.Forms.CheckBox()
         Me.CheckBox90 = New System.Windows.Forms.CheckBox()
         Me.CheckBox91 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox92 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -1050,6 +1051,16 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox91.Text = "CO2 Sensor"
         Me.CheckBox91.UseVisualStyleBackColor = True
         '
+        'CheckBox92
+        '
+        Me.CheckBox92.AutoSize = True
+        Me.CheckBox92.Location = New System.Drawing.Point(435, 417)
+        Me.CheckBox92.Name = "CheckBox92"
+        Me.CheckBox92.Size = New System.Drawing.Size(208, 17)
+        Me.CheckBox92.TabIndex = 105
+        Me.CheckBox92.Text = "2 Pass Micro Channel Condenser Coils"
+        Me.CheckBox92.UseVisualStyleBackColor = True
+        '
         'frmUPGFIOPEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1057,6 +1068,7 @@ Partial Class frmUPGFIOPEntry
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(1486, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox92)
         Me.Controls.Add(Me.CheckBox91)
         Me.Controls.Add(Me.CheckBox90)
         Me.Controls.Add(Me.CheckBox89)
@@ -1253,4 +1265,5 @@ Partial Class frmUPGFIOPEntry
     Friend WithEvents CheckBox89 As CheckBox
     Friend WithEvents CheckBox90 As CheckBox
     Friend WithEvents CheckBox91 As CheckBox
+    Friend WithEvents CheckBox92 As CheckBox
 End Class

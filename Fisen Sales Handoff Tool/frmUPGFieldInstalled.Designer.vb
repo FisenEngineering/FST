@@ -70,6 +70,7 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox44 = New System.Windows.Forms.CheckBox()
         Me.CheckBox45 = New System.Windows.Forms.CheckBox()
         Me.CheckBox46 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox47 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -551,12 +552,23 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox46.Text = "Programmable Wall Stat, MS/TP N2"
         Me.CheckBox46.UseVisualStyleBackColor = True
         '
+        'CheckBox47
+        '
+        Me.CheckBox47.AutoSize = True
+        Me.CheckBox47.Location = New System.Drawing.Point(799, 339)
+        Me.CheckBox47.Name = "CheckBox47"
+        Me.CheckBox47.Size = New System.Drawing.Size(146, 17)
+        Me.CheckBox47.TabIndex = 95
+        Me.CheckBox47.Text = "Wall Temperature Sensor"
+        Me.CheckBox47.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox47)
         Me.Controls.Add(Me.CheckBox46)
         Me.Controls.Add(Me.CheckBox45)
         Me.Controls.Add(Me.CheckBox44)
@@ -662,4 +674,5 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox44 As CheckBox
     Friend WithEvents CheckBox45 As CheckBox
     Friend WithEvents CheckBox46 As CheckBox
+    Friend WithEvents CheckBox47 As CheckBox
 End Class
