@@ -117,6 +117,7 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox90 = New System.Windows.Forms.CheckBox()
         Me.CheckBox91 = New System.Windows.Forms.CheckBox()
         Me.CheckBox92 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox93 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -323,7 +324,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox19
         '
         Me.CheckBox19.AutoSize = True
-        Me.CheckBox19.Location = New System.Drawing.Point(978, 288)
+        Me.CheckBox19.Location = New System.Drawing.Point(978, 307)
         Me.CheckBox19.Name = "CheckBox19"
         Me.CheckBox19.Size = New System.Drawing.Size(103, 17)
         Me.CheckBox19.TabIndex = 34
@@ -333,7 +334,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox20
         '
         Me.CheckBox20.AutoSize = True
-        Me.CheckBox20.Location = New System.Drawing.Point(978, 265)
+        Me.CheckBox20.Location = New System.Drawing.Point(978, 284)
         Me.CheckBox20.Name = "CheckBox20"
         Me.CheckBox20.Size = New System.Drawing.Size(140, 17)
         Me.CheckBox20.TabIndex = 33
@@ -343,7 +344,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox22
         '
         Me.CheckBox22.AutoSize = True
-        Me.CheckBox22.Location = New System.Drawing.Point(978, 81)
+        Me.CheckBox22.Location = New System.Drawing.Point(978, 100)
         Me.CheckBox22.Name = "CheckBox22"
         Me.CheckBox22.Size = New System.Drawing.Size(132, 17)
         Me.CheckBox22.TabIndex = 37
@@ -353,7 +354,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox23
         '
         Me.CheckBox23.AutoSize = True
-        Me.CheckBox23.Location = New System.Drawing.Point(978, 58)
+        Me.CheckBox23.Location = New System.Drawing.Point(978, 77)
         Me.CheckBox23.Name = "CheckBox23"
         Me.CheckBox23.Size = New System.Drawing.Size(134, 17)
         Me.CheckBox23.TabIndex = 36
@@ -583,7 +584,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox45
         '
         Me.CheckBox45.AutoSize = True
-        Me.CheckBox45.Location = New System.Drawing.Point(978, 311)
+        Me.CheckBox45.Location = New System.Drawing.Point(978, 330)
         Me.CheckBox45.Name = "CheckBox45"
         Me.CheckBox45.Size = New System.Drawing.Size(160, 17)
         Me.CheckBox45.TabIndex = 59
@@ -793,7 +794,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox66
         '
         Me.CheckBox66.AutoSize = True
-        Me.CheckBox66.Location = New System.Drawing.Point(978, 334)
+        Me.CheckBox66.Location = New System.Drawing.Point(978, 353)
         Me.CheckBox66.Name = "CheckBox66"
         Me.CheckBox66.Size = New System.Drawing.Size(140, 17)
         Me.CheckBox66.TabIndex = 79
@@ -823,7 +824,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox69
         '
         Me.CheckBox69.AutoSize = True
-        Me.CheckBox69.Location = New System.Drawing.Point(978, 104)
+        Me.CheckBox69.Location = New System.Drawing.Point(978, 123)
         Me.CheckBox69.Name = "CheckBox69"
         Me.CheckBox69.Size = New System.Drawing.Size(94, 17)
         Me.CheckBox69.TabIndex = 82
@@ -833,7 +834,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox70
         '
         Me.CheckBox70.AutoSize = True
-        Me.CheckBox70.Location = New System.Drawing.Point(978, 127)
+        Me.CheckBox70.Location = New System.Drawing.Point(978, 146)
         Me.CheckBox70.Name = "CheckBox70"
         Me.CheckBox70.Size = New System.Drawing.Size(84, 17)
         Me.CheckBox70.TabIndex = 83
@@ -843,7 +844,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox71
         '
         Me.CheckBox71.AutoSize = True
-        Me.CheckBox71.Location = New System.Drawing.Point(978, 149)
+        Me.CheckBox71.Location = New System.Drawing.Point(978, 168)
         Me.CheckBox71.Name = "CheckBox71"
         Me.CheckBox71.Size = New System.Drawing.Size(85, 17)
         Me.CheckBox71.TabIndex = 84
@@ -853,7 +854,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox72
         '
         Me.CheckBox72.AutoSize = True
-        Me.CheckBox72.Location = New System.Drawing.Point(978, 173)
+        Me.CheckBox72.Location = New System.Drawing.Point(978, 192)
         Me.CheckBox72.Name = "CheckBox72"
         Me.CheckBox72.Size = New System.Drawing.Size(82, 17)
         Me.CheckBox72.TabIndex = 85
@@ -863,7 +864,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox73
         '
         Me.CheckBox73.AutoSize = True
-        Me.CheckBox73.Location = New System.Drawing.Point(978, 242)
+        Me.CheckBox73.Location = New System.Drawing.Point(978, 261)
         Me.CheckBox73.Name = "CheckBox73"
         Me.CheckBox73.Size = New System.Drawing.Size(82, 17)
         Me.CheckBox73.TabIndex = 88
@@ -873,7 +874,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox74
         '
         Me.CheckBox74.AutoSize = True
-        Me.CheckBox74.Location = New System.Drawing.Point(978, 219)
+        Me.CheckBox74.Location = New System.Drawing.Point(978, 238)
         Me.CheckBox74.Name = "CheckBox74"
         Me.CheckBox74.Size = New System.Drawing.Size(80, 17)
         Me.CheckBox74.TabIndex = 87
@@ -883,7 +884,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox75
         '
         Me.CheckBox75.AutoSize = True
-        Me.CheckBox75.Location = New System.Drawing.Point(978, 196)
+        Me.CheckBox75.Location = New System.Drawing.Point(978, 215)
         Me.CheckBox75.Name = "CheckBox75"
         Me.CheckBox75.Size = New System.Drawing.Size(94, 17)
         Me.CheckBox75.TabIndex = 86
@@ -1061,6 +1062,16 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox92.Text = "2 Pass Micro Channel Condenser Coils"
         Me.CheckBox92.UseVisualStyleBackColor = True
         '
+        'CheckBox93
+        '
+        Me.CheckBox93.AutoSize = True
+        Me.CheckBox93.Location = New System.Drawing.Point(978, 54)
+        Me.CheckBox93.Name = "CheckBox93"
+        Me.CheckBox93.Size = New System.Drawing.Size(183, 17)
+        Me.CheckBox93.TabIndex = 106
+        Me.CheckBox93.Text = "Standard Static Belt Drive Blower"
+        Me.CheckBox93.UseVisualStyleBackColor = True
+        '
         'frmUPGFIOPEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1068,6 +1079,7 @@ Partial Class frmUPGFIOPEntry
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(1486, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox93)
         Me.Controls.Add(Me.CheckBox92)
         Me.Controls.Add(Me.CheckBox91)
         Me.Controls.Add(Me.CheckBox90)
@@ -1266,4 +1278,5 @@ Partial Class frmUPGFIOPEntry
     Friend WithEvents CheckBox90 As CheckBox
     Friend WithEvents CheckBox91 As CheckBox
     Friend WithEvents CheckBox92 As CheckBox
+    Friend WithEvents CheckBox93 As CheckBox
 End Class

@@ -25,6 +25,9 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.grpUnitStyle = New System.Windows.Forms.GroupBox()
+        Me.optPremier = New System.Windows.Forms.RadioButton()
+        Me.optSelect = New System.Windows.Forms.RadioButton()
+        Me.optChoice = New System.Windows.Forms.RadioButton()
         Me.chkHydroKit = New System.Windows.Forms.CheckBox()
         Me.optOther = New System.Windows.Forms.RadioButton()
         Me.optSolution = New System.Windows.Forms.RadioButton()
@@ -75,9 +78,6 @@ Partial Class frmMain
         Me.cmdFieldInst = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtModList = New System.Windows.Forms.TextBox()
-        Me.optChoice = New System.Windows.Forms.RadioButton()
-        Me.optSelect = New System.Windows.Forms.RadioButton()
-        Me.optPremier = New System.Windows.Forms.RadioButton()
         Me.grpUnitStyle.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -98,12 +98,43 @@ Partial Class frmMain
         Me.grpUnitStyle.Controls.Add(Me.optSeries12)
         Me.grpUnitStyle.Controls.Add(Me.optSeries10)
         Me.grpUnitStyle.Controls.Add(Me.optSeries5)
+        Me.grpUnitStyle.Enabled = False
         Me.grpUnitStyle.Location = New System.Drawing.Point(12, 282)
         Me.grpUnitStyle.Name = "grpUnitStyle"
         Me.grpUnitStyle.Size = New System.Drawing.Size(517, 140)
         Me.grpUnitStyle.TabIndex = 12
         Me.grpUnitStyle.TabStop = False
         Me.grpUnitStyle.Text = "Unit Type"
+        '
+        'optPremier
+        '
+        Me.optPremier.AutoSize = True
+        Me.optPremier.Location = New System.Drawing.Point(168, 65)
+        Me.optPremier.Name = "optPremier"
+        Me.optPremier.Size = New System.Drawing.Size(60, 17)
+        Me.optPremier.TabIndex = 14
+        Me.optPremier.Text = "Premier"
+        Me.optPremier.UseVisualStyleBackColor = True
+        '
+        'optSelect
+        '
+        Me.optSelect.AutoSize = True
+        Me.optSelect.Location = New System.Drawing.Point(168, 42)
+        Me.optSelect.Name = "optSelect"
+        Me.optSelect.Size = New System.Drawing.Size(55, 17)
+        Me.optSelect.TabIndex = 13
+        Me.optSelect.Text = "Select"
+        Me.optSelect.UseVisualStyleBackColor = True
+        '
+        'optChoice
+        '
+        Me.optChoice.AutoSize = True
+        Me.optChoice.Location = New System.Drawing.Point(168, 19)
+        Me.optChoice.Name = "optChoice"
+        Me.optChoice.Size = New System.Drawing.Size(58, 17)
+        Me.optChoice.TabIndex = 12
+        Me.optChoice.Text = "Choice"
+        Me.optChoice.UseVisualStyleBackColor = True
         '
         'chkHydroKit
         '
@@ -542,36 +573,6 @@ Partial Class frmMain
         Me.txtModList.Name = "txtModList"
         Me.txtModList.Size = New System.Drawing.Size(342, 20)
         Me.txtModList.TabIndex = 11
-        '
-        'optChoice
-        '
-        Me.optChoice.AutoSize = True
-        Me.optChoice.Location = New System.Drawing.Point(168, 19)
-        Me.optChoice.Name = "optChoice"
-        Me.optChoice.Size = New System.Drawing.Size(58, 17)
-        Me.optChoice.TabIndex = 12
-        Me.optChoice.Text = "Choice"
-        Me.optChoice.UseVisualStyleBackColor = True
-        '
-        'optSelect
-        '
-        Me.optSelect.AutoSize = True
-        Me.optSelect.Location = New System.Drawing.Point(168, 42)
-        Me.optSelect.Name = "optSelect"
-        Me.optSelect.Size = New System.Drawing.Size(55, 17)
-        Me.optSelect.TabIndex = 13
-        Me.optSelect.Text = "Select"
-        Me.optSelect.UseVisualStyleBackColor = True
-        '
-        'optPremier
-        '
-        Me.optPremier.AutoSize = True
-        Me.optPremier.Location = New System.Drawing.Point(168, 65)
-        Me.optPremier.Name = "optPremier"
-        Me.optPremier.Size = New System.Drawing.Size(60, 17)
-        Me.optPremier.TabIndex = 14
-        Me.optPremier.Text = "Premier"
-        Me.optPremier.UseVisualStyleBackColor = True
         '
         'frmMain
         '

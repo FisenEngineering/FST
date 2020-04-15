@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>46</ApplicationRevision>
+    <ApplicationRevision>47</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -138,6 +138,12 @@
     <Compile Include="frmMHG_R.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmModShopOptions.Designer.vb">
+      <DependentUpon>frmModShopOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModShopOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPointLoads.Designer.vb">
       <DependentUpon>frmPointLoads.vb</DependentUpon>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMHG_R.resx">
       <DependentUpon>frmMHG_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModShopOptions.resx">
+      <DependentUpon>frmModShopOptions.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPointLoads.resx">
       <DependentUpon>frmPointLoads.vb</DependentUpon>

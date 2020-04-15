@@ -9,6 +9,7 @@ Public Class frmMain
     Private pversion As String
     Private pbprq As Boolean
     Private pSolutionname As String
+    Public ModShopOptionsPresent As Boolean
 
     Public Property SlnName As String
         Get
@@ -99,6 +100,7 @@ Public Class frmMain
         txtBaseUnitFile.Text = UnitBaseUnitFile
         pversion = Application.ProductVersion
         Me.Text = "Fisen Sales Handoff Tool Version " & pversion
+        ModShopOptionsPresent = False
     End Sub
 
     Private Function UPGUnit() As Boolean
@@ -374,9 +376,17 @@ Public Class frmMain
                 lUnitWriter.WriteString(cControl.Text)
                 lUnitWriter.WriteEndElement()
             End If
-
-
         Next
+
+        If ModShopOptionsPresent Then
+            For Each cControl In frmModShopOptions.Controls.OfType(Of CheckBox)
+                If cControl.Checked Then
+                    lUnitWriter.WriteStartElement("FIOPItem")
+                    lUnitWriter.WriteString(cControl.Text)
+                    lUnitWriter.WriteEndElement()
+                End If
+            Next
+        End If
 
 
     End Sub
@@ -2256,6 +2266,8 @@ Public Class frmMain
         lUnitWriter.WriteEndElement()
     End Sub
     Private Sub WriteProjectData(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
+        Dim Dummy As MsgBoxResult
+
         lUnitWriter.WriteStartElement("JobNumber")
         lUnitWriter.WriteString(txtJobNumber.Text)
         lUnitWriter.WriteEndElement()
@@ -2317,6 +2329,14 @@ Public Class frmMain
         lUnitWriter.WriteString(txtModList.Text)
         lUnitWriter.WriteEndElement()
 
+        Dummy = MsgBox("Is the Base Unit 65k SCCR Rated?", vbYesNo, "Fisen Sales Tool")
+        lUnitWriter.WriteStartElement("ModCodes")
+        If Dummy = vbYes Then
+            lUnitWriter.WriteString("True")
+        Else
+            lUnitWriter.WriteString("False")
+        End If
+        lUnitWriter.WriteEndElement()
     End Sub
 
     Private Sub WriteYLAAPIN(mUnitWriter As XmlWriter, msettings As XmlWriterSettings)
@@ -2613,6 +2633,7 @@ Public Class frmMain
         txtUnitDirectory.Text = FolderBrowserDialog1.SelectedPath
         txtBaseUnitFile.Text = txtUnitDirectory.Text & "\" & txtJobNumber.Text & "-" & txtUnitNum.Text & "\Submittal Source (Do not Distribute)\Submittal Design\BaseUnitFile.xml"
         txtUnitRootDirectory.Text = txtUnitDirectory.Text & "\" & txtJobNumber.Text & "-" & txtUnitNum.Text
+        grpUnitStyle.Enabled = True
     End Sub
 
     Private Function ValidateJobNumber() As Boolean

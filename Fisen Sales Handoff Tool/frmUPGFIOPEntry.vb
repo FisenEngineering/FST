@@ -2,6 +2,13 @@
     Public Property pCancelled As Boolean
 
     Private Sub cmdOK_Click(sender As Object, e As EventArgs) Handles cmdOK.Click
+        Dim dummy As MsgBoxResult
+
+        dummy = MsgBox("Are there any Norman Mod Shop Options?", vbYesNo, "Fisen Sales Tools")
+        If dummy = vbYes Then
+            frmModShopOptions.ShowDialog()
+
+        End If
         Me.Hide()
     End Sub
 

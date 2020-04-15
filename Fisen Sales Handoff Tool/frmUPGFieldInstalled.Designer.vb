@@ -71,6 +71,7 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox45 = New System.Windows.Forms.CheckBox()
         Me.CheckBox46 = New System.Windows.Forms.CheckBox()
         Me.CheckBox47 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox48 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -115,7 +116,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(12, 58)
+        Me.CheckBox2.Location = New System.Drawing.Point(277, 339)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(91, 17)
         Me.CheckBox2.TabIndex = 51
@@ -415,11 +416,11 @@ Partial Class frmUPGFieldInstalled
         'CheckBox32
         '
         Me.CheckBox32.AutoSize = True
-        Me.CheckBox32.Location = New System.Drawing.Point(277, 242)
+        Me.CheckBox32.Location = New System.Drawing.Point(277, 362)
         Me.CheckBox32.Name = "CheckBox32"
-        Me.CheckBox32.Size = New System.Drawing.Size(123, 17)
+        Me.CheckBox32.Size = New System.Drawing.Size(179, 17)
         Me.CheckBox32.TabIndex = 81
-        Me.CheckBox32.Text = "Side Duct Flange Kit"
+        Me.CheckBox32.Text = "Hail Guard Kit - Diamond Pattern"
         Me.CheckBox32.UseVisualStyleBackColor = True
         '
         'CheckBox33
@@ -562,12 +563,23 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox47.Text = "Wall Temperature Sensor"
         Me.CheckBox47.UseVisualStyleBackColor = True
         '
+        'CheckBox48
+        '
+        Me.CheckBox48.AutoSize = True
+        Me.CheckBox48.Location = New System.Drawing.Point(277, 385)
+        Me.CheckBox48.Name = "CheckBox48"
+        Me.CheckBox48.Size = New System.Drawing.Size(163, 17)
+        Me.CheckBox48.TabIndex = 96
+        Me.CheckBox48.Text = "Hail Guard Kit - Provent Style"
+        Me.CheckBox48.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox48)
         Me.Controls.Add(Me.CheckBox47)
         Me.Controls.Add(Me.CheckBox46)
         Me.Controls.Add(Me.CheckBox45)
@@ -675,4 +687,5 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox45 As CheckBox
     Friend WithEvents CheckBox46 As CheckBox
     Friend WithEvents CheckBox47 As CheckBox
+    Friend WithEvents CheckBox48 As CheckBox
 End Class
