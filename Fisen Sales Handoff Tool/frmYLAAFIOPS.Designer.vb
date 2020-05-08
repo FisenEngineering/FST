@@ -32,6 +32,10 @@ Partial Class frmYLAAFIOPS
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -86,7 +90,7 @@ Partial Class frmYLAAFIOPS
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(225, 255)
+        Me.CheckBox4.Location = New System.Drawing.Point(262, 255)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(139, 17)
         Me.CheckBox4.TabIndex = 16
@@ -96,7 +100,7 @@ Partial Class frmYLAAFIOPS
         'CheckBox5
         '
         Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(225, 278)
+        Me.CheckBox5.Location = New System.Drawing.Point(262, 278)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(150, 17)
         Me.CheckBox5.TabIndex = 17
@@ -106,7 +110,7 @@ Partial Class frmYLAAFIOPS
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(225, 301)
+        Me.CheckBox6.Location = New System.Drawing.Point(262, 301)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(143, 17)
         Me.CheckBox6.TabIndex = 18
@@ -116,7 +120,7 @@ Partial Class frmYLAAFIOPS
         'CheckBox7
         '
         Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(653, 12)
+        Me.CheckBox7.Location = New System.Drawing.Point(585, 12)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(133, 17)
         Me.CheckBox7.TabIndex = 19
@@ -126,12 +130,52 @@ Partial Class frmYLAAFIOPS
         'CheckBox8
         '
         Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(225, 12)
+        Me.CheckBox8.Location = New System.Drawing.Point(262, 12)
         Me.CheckBox8.Name = "CheckBox8"
         Me.CheckBox8.Size = New System.Drawing.Size(189, 17)
         Me.CheckBox8.TabIndex = 20
         Me.CheckBox8.Text = "Low Sound Fans with VSD Control"
         Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Location = New System.Drawing.Point(262, 324)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(160, 17)
+        Me.CheckBox9.TabIndex = 21
+        Me.CheckBox9.Text = "Electronic Expansion Valves"
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(585, 35)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(203, 17)
+        Me.CheckBox10.TabIndex = 22
+        Me.CheckBox10.Text = "Louvered (Full Unit) Enclosure Panels"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Location = New System.Drawing.Point(262, 35)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(185, 17)
+        Me.CheckBox11.TabIndex = 23
+        Me.CheckBox11.Text = "Ultra Quiet Fans with VSD Control"
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Location = New System.Drawing.Point(12, 278)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(244, 17)
+        Me.CheckBox12.TabIndex = 24
+        Me.CheckBox12.Text = "Gateway for E-Link Non-Optiview Chiller Panel"
+        Me.CheckBox12.UseVisualStyleBackColor = True
         '
         'frmYLAAFIOPS
         '
@@ -139,6 +183,10 @@ Partial Class frmYLAAFIOPS
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox12)
+        Me.Controls.Add(Me.CheckBox11)
+        Me.Controls.Add(Me.CheckBox10)
+        Me.Controls.Add(Me.CheckBox9)
         Me.Controls.Add(Me.CheckBox8)
         Me.Controls.Add(Me.CheckBox7)
         Me.Controls.Add(Me.CheckBox6)
@@ -168,4 +216,8 @@ Partial Class frmYLAAFIOPS
     Friend WithEvents CheckBox6 As CheckBox
     Friend WithEvents CheckBox7 As CheckBox
     Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents CheckBox9 As CheckBox
+    Friend WithEvents CheckBox10 As CheckBox
+    Friend WithEvents CheckBox11 As CheckBox
+    Friend WithEvents CheckBox12 As CheckBox
 End Class

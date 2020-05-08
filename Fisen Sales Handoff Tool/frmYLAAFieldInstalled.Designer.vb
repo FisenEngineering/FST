@@ -27,6 +27,8 @@ Partial Class frmYLAAFieldInstalled
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -78,12 +80,34 @@ Partial Class frmYLAAFieldInstalled
         Me.CheckBox2.Text = "Remote Evaporator"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(325, 237)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(139, 17)
+        Me.CheckBox4.TabIndex = 24
+        Me.CheckBox4.Text = "Service Isolation Valves"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(12, 35)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(181, 17)
+        Me.CheckBox3.TabIndex = 25
+        Me.CheckBox3.Text = "25mm/1 inch Deflection Isolators"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
         'frmYLAAFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox3)
+        Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.CheckBox8)
@@ -103,4 +127,6 @@ Partial Class frmYLAAFieldInstalled
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents CheckBox3 As CheckBox
 End Class

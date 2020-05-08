@@ -416,9 +416,9 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox28.AutoSize = True
         Me.CheckBox28.Location = New System.Drawing.Point(1164, 35)
         Me.CheckBox28.Name = "CheckBox28"
-        Me.CheckBox28.Size = New System.Drawing.Size(156, 17)
+        Me.CheckBox28.Size = New System.Drawing.Size(153, 17)
         Me.CheckBox28.TabIndex = 42
-        Me.CheckBox28.Text = "Supply Air Smoke Dedector"
+        Me.CheckBox28.Text = "Supply Air Smoke Detector"
         Me.CheckBox28.UseVisualStyleBackColor = True
         '
         'CheckBox29

@@ -272,6 +272,7 @@ Public Class frmMain
 
         UnitWriter.WriteStartElement("FieldInstalled")
         If UPGUnit() Then Call WriteUPGFieldInstalled(UnitWriter, myXMLSettings)
+        If Family() = "YLAA" Then Call WriteYLAAFieldInstalled(UnitWriter, myXMLSettings)
         UnitWriter.WriteEndElement() 'FIOPS
 
         '***
@@ -366,6 +367,19 @@ Public Class frmMain
 
 
     End Sub
+    Private Sub WriteYLAAFieldInstalled(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
+
+        Dim cControl As CheckBox
+        For Each cControl In frmYLAAFieldInstalled.Controls.OfType(Of CheckBox)
+            If cControl.Checked Then
+                lUnitWriter.WriteStartElement("FieldInstalledItem")
+                lUnitWriter.WriteString(cControl.Text)
+                lUnitWriter.WriteEndElement()
+            End If
+        Next
+
+
+    End Sub
     Private Sub WriteUPGFIOPS(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
 
         Dim cControl As CheckBox
@@ -394,7 +408,7 @@ Public Class frmMain
     Private Sub WriteYLAAFIOPS(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
 
         Dim cControl As CheckBox
-        For Each cControl In frmUPGFIOPEntry.Controls.OfType(Of CheckBox)
+        For Each cControl In frmYLAAFIOPS.Controls.OfType(Of CheckBox)
 
             If cControl.Checked Then
                 lUnitWriter.WriteStartElement("FIOPItem")

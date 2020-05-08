@@ -27,6 +27,10 @@ Partial Class frmModShopOptions
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.cmdCancel = New System.Windows.Forms.Button()
         Me.cmdOK = New System.Windows.Forms.Button()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'CheckBox3
@@ -78,12 +82,56 @@ Partial Class frmModShopOptions
         Me.cmdOK.Text = "OK"
         Me.cmdOK.UseVisualStyleBackColor = True
         '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(12, 81)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(214, 17)
+        Me.CheckBox4.TabIndex = 99
+        Me.CheckBox4.Text = "Mod Option - Outdoor Airflow Monitoring"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(12, 104)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(147, 17)
+        Me.CheckBox5.TabIndex = 100
+        Me.CheckBox5.Text = "Mod Option - CO2 Sensor"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Location = New System.Drawing.Point(12, 127)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(256, 17)
+        Me.CheckBox6.TabIndex = 101
+        Me.CheckBox6.Text = "Mod Option - Economizer Control - Dual Enthalpy"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Location = New System.Drawing.Point(12, 150)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(188, 17)
+        Me.CheckBox7.TabIndex = 102
+        Me.CheckBox7.Text = "Mod Option - VFD Grounding Ring"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
         'frmModShopOptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 265)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox7)
+        Me.Controls.Add(Me.CheckBox6)
+        Me.Controls.Add(Me.CheckBox5)
+        Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.cmdCancel)
         Me.Controls.Add(Me.cmdOK)
         Me.Controls.Add(Me.CheckBox2)
@@ -102,4 +150,8 @@ Partial Class frmModShopOptions
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents cmdCancel As Button
     Friend WithEvents cmdOK As Button
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents CheckBox6 As CheckBox
+    Friend WithEvents CheckBox7 As CheckBox
 End Class

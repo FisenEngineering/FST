@@ -72,6 +72,8 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox46 = New System.Windows.Forms.CheckBox()
         Me.CheckBox47 = New System.Windows.Forms.CheckBox()
         Me.CheckBox48 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox49 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -408,9 +410,9 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox31.AutoSize = True
         Me.CheckBox31.Location = New System.Drawing.Point(445, 127)
         Me.CheckBox31.Name = "CheckBox31"
-        Me.CheckBox31.Size = New System.Drawing.Size(303, 17)
+        Me.CheckBox31.Size = New System.Drawing.Size(172, 17)
         Me.CheckBox31.TabIndex = 80
-        Me.CheckBox31.Text = "Economizer for Dedicated Horizontal/Sideflow Applications"
+        Me.CheckBox31.Text = "Powered Exhaust Vertical Flow"
         Me.CheckBox31.UseVisualStyleBackColor = True
         '
         'CheckBox32
@@ -573,12 +575,34 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox48.Text = "Hail Guard Kit - Provent Style"
         Me.CheckBox48.UseVisualStyleBackColor = True
         '
+        'CheckBox49
+        '
+        Me.CheckBox49.AutoSize = True
+        Me.CheckBox49.Location = New System.Drawing.Point(12, 582)
+        Me.CheckBox49.Name = "CheckBox49"
+        Me.CheckBox49.Size = New System.Drawing.Size(121, 17)
+        Me.CheckBox49.TabIndex = 97
+        Me.CheckBox49.Text = "Roof Curb 14"" Rigid"
+        Me.CheckBox49.UseVisualStyleBackColor = True
+        '
+        'CheckBox50
+        '
+        Me.CheckBox50.AutoSize = True
+        Me.CheckBox50.Location = New System.Drawing.Point(445, 150)
+        Me.CheckBox50.Name = "CheckBox50"
+        Me.CheckBox50.Size = New System.Drawing.Size(303, 17)
+        Me.CheckBox50.TabIndex = 98
+        Me.CheckBox50.Text = "Economizer for Dedicated Horizontal/Sideflow Applications"
+        Me.CheckBox50.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox50)
+        Me.Controls.Add(Me.CheckBox49)
         Me.Controls.Add(Me.CheckBox48)
         Me.Controls.Add(Me.CheckBox47)
         Me.Controls.Add(Me.CheckBox46)
@@ -688,4 +712,6 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox46 As CheckBox
     Friend WithEvents CheckBox47 As CheckBox
     Friend WithEvents CheckBox48 As CheckBox
+    Friend WithEvents CheckBox49 As CheckBox
+    Friend WithEvents CheckBox50 As CheckBox
 End Class
