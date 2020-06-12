@@ -36,6 +36,11 @@ Partial Class frmYLAAFIOPS
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.CheckBox11 = New System.Windows.Forms.CheckBox()
         Me.CheckBox12 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -70,7 +75,7 @@ Partial Class frmYLAAFIOPS
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(12, 35)
+        Me.CheckBox2.Location = New System.Drawing.Point(12, 58)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(118, 17)
         Me.CheckBox2.TabIndex = 14
@@ -177,12 +182,67 @@ Partial Class frmYLAAFIOPS
         Me.CheckBox12.Text = "Gateway for E-Link Non-Optiview Chiller Panel"
         Me.CheckBox12.UseVisualStyleBackColor = True
         '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Location = New System.Drawing.Point(585, 103)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(83, 17)
+        Me.CheckBox13.TabIndex = 25
+        Me.CheckBox13.Text = "Enviroguard"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'CheckBox14
+        '
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Location = New System.Drawing.Point(266, 103)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(102, 17)
+        Me.CheckBox14.TabIndex = 26
+        Me.CheckBox14.Text = "Low Ambient Kit"
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'CheckBox15
+        '
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Location = New System.Drawing.Point(266, 126)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(104, 17)
+        Me.CheckBox15.TabIndex = 27
+        Me.CheckBox15.Text = "High Ambient Kit"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Location = New System.Drawing.Point(12, 35)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(128, 17)
+        Me.CheckBox16.TabIndex = 28
+        Me.CheckBox16.Text = "SP CB w/ Ext Handle"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'CheckBox17
+        '
+        Me.CheckBox17.AutoSize = True
+        Me.CheckBox17.Location = New System.Drawing.Point(262, 58)
+        Me.CheckBox17.Name = "CheckBox17"
+        Me.CheckBox17.Size = New System.Drawing.Size(140, 17)
+        Me.CheckBox17.TabIndex = 29
+        Me.CheckBox17.Text = "Acoustic Sound Blanket"
+        Me.CheckBox17.UseVisualStyleBackColor = True
+        '
         'frmYLAAFIOPS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox17)
+        Me.Controls.Add(Me.CheckBox16)
+        Me.Controls.Add(Me.CheckBox15)
+        Me.Controls.Add(Me.CheckBox14)
+        Me.Controls.Add(Me.CheckBox13)
         Me.Controls.Add(Me.CheckBox12)
         Me.Controls.Add(Me.CheckBox11)
         Me.Controls.Add(Me.CheckBox10)
@@ -220,4 +280,9 @@ Partial Class frmYLAAFIOPS
     Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents CheckBox11 As CheckBox
     Friend WithEvents CheckBox12 As CheckBox
+    Friend WithEvents CheckBox13 As CheckBox
+    Friend WithEvents CheckBox14 As CheckBox
+    Friend WithEvents CheckBox15 As CheckBox
+    Friend WithEvents CheckBox16 As CheckBox
+    Friend WithEvents CheckBox17 As CheckBox
 End Class

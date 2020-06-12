@@ -1,6 +1,6 @@
 ﻿Imports System.Xml
 Imports System.IO
-
+Imports System.CodeDom.Compiler
 
 Public Class frmMain
     Public MySecurity As New ClsSecurity
@@ -21,10 +21,10 @@ Public Class frmMain
     End Property
     Public Property BypassRequest As Boolean
         Get
-            Return pBPRQ
+            Return pbprq
         End Get
         Set(value As Boolean)
-            pBPRQ = value
+            pbprq = value
         End Set
     End Property
     Private Sub cmdEnterPerformance_Click(sender As Object, e As EventArgs) Handles cmdEnterPerformance.Click
@@ -2755,19 +2755,42 @@ Public Class frmMain
     Private Function ValidateRequiredFiles() As Boolean
         Dim Dummy As MsgBoxResult
         Dim AOK As Boolean
-        Dim i As Integer
+        Dim i, j As Integer
         Dim SalesPath As String
         Dim MissingFileMessage As String
+        Dim FileList As String()
+        Dim TempFile As String
+        Dim VLoc, DotLoc As Integer
 
         AOK = True
         MissingFileMessage = "Could not locate a required file." & vbCrLf & "Verifiy file location and name." & vbCrLf
         SalesPath = txtUnitRootDirectory.Text & "\Sales Info\"
 
+        FileList = Directory.GetFiles(SalesPath)
+
         For i = 0 To lstRequiredFiles.Items.Count - 1
-            If Not (System.IO.File.Exists(SalesPath & lstRequiredFiles.Items.Item(i))) Then
-                AOK = False
+            AOK = False
+            For j = 0 To FileList.Length - 1
+                TempFile = FileList(j)
+                TempFile = UCase(TempFile)
+                VLoc = InStrRev(TempFile, "V")
+                If VLoc > 0 Then
+                    DotLoc = InStrRev(TempFile, ".")
+                    TempFile = Trim(Mid(TempFile, 1, VLoc - 1)) & Trim(Mid(TempFile, DotLoc + 1))
+
+                End If
+                If TempFile = UCase(SalesPath & lstRequiredFiles.Items.Item(i)) Then
+                    AOK = True
+                    Exit For
+                End If
+            Next
+            If AOK = False Then
                 Dummy = MsgBox(MissingFileMessage & lstRequiredFiles.Items.Item(i), vbOKOnly, "Fisen Sales Handoff Tool")
             End If
+            'If Not (System.IO.File.Exists(SalesPath & lstRequiredFiles.Items.Item(i))) Then
+            '    AOK = False
+            '    Dummy = MsgBox(MissingFileMessage & lstRequiredFiles.Items.Item(i), vbOKOnly, "Fisen Sales Handoff Tool")
+            'End If
         Next
 
         Return AOK

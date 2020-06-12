@@ -29,6 +29,7 @@ Partial Class frmYLAAFieldInstalled
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -100,12 +101,23 @@ Partial Class frmYLAAFieldInstalled
         Me.CheckBox3.Text = "25mm/1 inch Deflection Isolators"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(12, 283)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(176, 17)
+        Me.CheckBox5.TabIndex = 26
+        Me.CheckBox5.Text = "Thermal Dispersion Flow Switch"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
         'frmYLAAFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox5)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.CheckBox2)
@@ -129,4 +141,5 @@ Partial Class frmYLAAFieldInstalled
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox4 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox5 As CheckBox
 End Class
