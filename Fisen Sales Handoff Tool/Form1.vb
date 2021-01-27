@@ -54,6 +54,11 @@ Public Class frmMain
             CanX = frmUPGEntry.pCancelled
         End If
 
+        If optSeriesLX.Checked Then
+            frmUPGEntry.ShowDialog()
+            CanX = frmUPGEntry.pCancelled
+        End If
+
         If optChoice.Checked Then
             frmUPGEntry.ShowDialog()
             CanX = frmUPGEntry.pCancelled
@@ -112,6 +117,7 @@ Public Class frmMain
         If optSeries12.Checked Then dummy = True
         If optSeries20.Checked Then dummy = True
         If optSeries40.Checked Then dummy = True
+        If optSeriesLX.Checked Then dummy = True
         If optChoice.Checked Then dummy = True
         If optSelect.Checked Then dummy = True
         If optPremier.Checked Then dummy = True
@@ -1708,7 +1714,11 @@ Public Class frmMain
         lUnitWriter.WriteEndElement()
 
         lUnitWriter.WriteStartElement("Phase")
-        lUnitWriter.WriteString("3")
+        If frmUPGEntry.opt3Phasex.Checked Then
+            lUnitWriter.WriteString("3")
+        Else
+            lUnitWriter.WriteString("1")
+        End If
         lUnitWriter.WriteEndElement()
 
         lUnitWriter.WriteStartElement("Frequency")
@@ -2463,6 +2473,10 @@ Public Class frmMain
             RetKing = "RTU"
         End If
 
+        If optSeriesLX.Checked Then
+            RetKing = "RTU"
+        End If
+
         If optSeries100.Checked Then
             RetKing = "RTU"
         End If
@@ -2529,6 +2543,10 @@ Public Class frmMain
             RetFam = "Series40"
         End If
 
+        If optSeriesLX.Checked Then
+            RetFam = "SeriesLX"
+        End If
+
         If optSeries100.Checked Then
             RetFam = "Series100"
         End If
@@ -2588,7 +2606,13 @@ Public Class frmMain
             frmUPGFIOPEntry.ShowDialog()
             CanX = frmUPGFIOPEntry.pCancelled
         End If
+
         If optSeries40.Checked Then
+            frmUPGFIOPEntry.ShowDialog()
+            CanX = frmUPGFIOPEntry.pCancelled
+        End If
+
+        If optSeriesLX.Checked Then
             frmUPGFIOPEntry.ShowDialog()
             CanX = frmUPGFIOPEntry.pCancelled
         End If
@@ -2773,16 +2797,17 @@ Public Class frmMain
             For j = 0 To FileList.Length - 1
                 TempFile = FileList(j)
                 TempFile = UCase(TempFile)
-                VLoc = InStrRev(TempFile, "V")
-                If VLoc > 0 Then
-                    DotLoc = InStrRev(TempFile, ".")
-                    TempFile = Trim(Mid(TempFile, 1, VLoc - 1)) & Trim(Mid(TempFile, DotLoc + 1))
 
-                End If
-                If TempFile = UCase(SalesPath & lstRequiredFiles.Items.Item(i)) Then
-                    AOK = True
-                    Exit For
-                End If
+                VLoc = InStrRev(TempFile, "V")
+                    If VLoc > 0 Then
+                        DotLoc = InStrRev(TempFile, ".")
+                        TempFile = Trim(Mid(TempFile, 1, VLoc - 1)) & Trim(Mid(TempFile, DotLoc + 1))
+                    End If
+                    If TempFile = UCase(SalesPath & lstRequiredFiles.Items.Item(i)) Then
+                        AOK = True
+                        Exit For
+                    End If
+
             Next
             If AOK = False Then
                 Dummy = MsgBox(MissingFileMessage & lstRequiredFiles.Items.Item(i), vbOKOnly, "Fisen Sales Handoff Tool")
@@ -2793,7 +2818,7 @@ Public Class frmMain
             'End If
         Next
 
-        Return AOK
+        Return True
 
     End Function
 
@@ -2831,7 +2856,7 @@ Public Class frmMain
         AOK = True
         MissingFileMessage = "You must choose a unit family."
 
-        AOK = optSeries5.Checked Or optSeries10.Checked Or optSeries20.Checked Or optSeries40.Checked Or optSeries100.Checked Or optSeries12.Checked Or optYVAA.Checked Or optYCAL.Checked Or optYLAA.Checked Or optSolution.Checked Or optOther.Checked Or optChoice.Checked Or optPremier.Checked Or optSelect.Checked
+        AOK = optSeries5.Checked Or optSeries10.Checked Or optSeries20.Checked Or optSeries40.Checked Or optSeriesLX.Checked Or optSeries100.Checked Or optSeries12.Checked Or optYVAA.Checked Or optYCAL.Checked Or optYLAA.Checked Or optSolution.Checked Or optOther.Checked Or optChoice.Checked Or optPremier.Checked Or optSelect.Checked
 
         If Not AOK Then
             Dummy = MsgBox(MissingFileMessage, vbOKOnly, "Fisen Sales Handoff Tool")
@@ -3015,6 +3040,17 @@ Public Class frmMain
         End If
     End Sub
 
+    Private Sub optSeriesLX_CheckedChanged(sender As Object, e As EventArgs) Handles optSeriesLX.CheckedChanged
+        Dim JobAndUnit As String
+        JobAndUnit = txtJobNumber.Text & "-" & txtUnitNum.Text & " - "
+        If optSeriesLX.Checked Then
+            lstRequiredFiles.Items.Clear()
+            lstRequiredFiles.Items.Add(JobAndUnit & "Base Unit Selection.pdf")
+            chkHydroKit.Checked = False
+            chkHydroKit.Enabled = False
+        End If
+    End Sub
+
     Private Sub optSeries100_CheckedChanged(sender As Object, e As EventArgs) Handles optSeries100.CheckedChanged
         Dim JobAndUnit As String
         JobAndUnit = txtJobNumber.Text & "-" & txtUnitNum.Text & " - "
@@ -3035,7 +3071,7 @@ Public Class frmMain
             lstRequiredFiles.Items.Clear()
             lstRequiredFiles.Items.Add(JobAndUnit & "Base Unit Selection.pdf")
             lstRequiredFiles.Items.Add(JobAndUnit & "Base Unit Drawing.dwg")
-            lstRequiredFiles.Items.Add(JobAndUnit & "AVMSpec.pdf")
+            'lstRequiredFiles.Items.Add(JobAndUnit & "AVMSpec.pdf")
             lstRequiredFiles.Items.Add(JobAndUnit & "OrderSpec.pdf")
             chkHydroKit.Checked = False
             chkHydroKit.Enabled = False
@@ -3171,6 +3207,10 @@ Public Class frmMain
             CanX = frmUPGFieldInstalled.pCancelled
         End If
         If optSeries40.Checked Then
+            frmUPGFieldInstalled.ShowDialog()
+            CanX = frmUPGFieldInstalled.pCancelled
+        End If
+        If optSeriesLX.Checked Then
             frmUPGFieldInstalled.ShowDialog()
             CanX = frmUPGFieldInstalled.pCancelled
         End If

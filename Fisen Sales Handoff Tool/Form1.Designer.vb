@@ -25,6 +25,7 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.grpUnitStyle = New System.Windows.Forms.GroupBox()
+        Me.optSeriesLX = New System.Windows.Forms.RadioButton()
         Me.optPremier = New System.Windows.Forms.RadioButton()
         Me.optSelect = New System.Windows.Forms.RadioButton()
         Me.optChoice = New System.Windows.Forms.RadioButton()
@@ -83,6 +84,7 @@ Partial Class frmMain
         '
         'grpUnitStyle
         '
+        Me.grpUnitStyle.Controls.Add(Me.optSeriesLX)
         Me.grpUnitStyle.Controls.Add(Me.optPremier)
         Me.grpUnitStyle.Controls.Add(Me.optSelect)
         Me.grpUnitStyle.Controls.Add(Me.optChoice)
@@ -105,6 +107,16 @@ Partial Class frmMain
         Me.grpUnitStyle.TabIndex = 12
         Me.grpUnitStyle.TabStop = False
         Me.grpUnitStyle.Text = "Unit Type"
+        '
+        'optSeriesLX
+        '
+        Me.optSeriesLX.AutoSize = True
+        Me.optSeriesLX.Location = New System.Drawing.Point(87, 42)
+        Me.optSeriesLX.Name = "optSeriesLX"
+        Me.optSeriesLX.Size = New System.Drawing.Size(70, 17)
+        Me.optSeriesLX.TabIndex = 15
+        Me.optSeriesLX.Text = "LX Series"
+        Me.optSeriesLX.UseVisualStyleBackColor = True
         '
         'optPremier
         '
@@ -367,7 +379,7 @@ Partial Class frmMain
         '
         Me.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBrand.FormattingEnabled = True
-        Me.cmbBrand.Items.AddRange(New Object() {"JCI", "TMP", "York", "LUX", "FRJ"})
+        Me.cmbBrand.Items.AddRange(New Object() {"JCI", "TMP", "York", "LUX", "FRJ", "GUA"})
         Me.cmbBrand.Location = New System.Drawing.Point(452, 83)
         Me.cmbBrand.Name = "cmbBrand"
         Me.cmbBrand.Size = New System.Drawing.Size(71, 21)
@@ -683,4 +695,5 @@ Partial Class frmMain
     Friend WithEvents optPremier As RadioButton
     Friend WithEvents optSelect As RadioButton
     Friend WithEvents optChoice As RadioButton
+    Friend WithEvents optSeriesLX As RadioButton
 End Class

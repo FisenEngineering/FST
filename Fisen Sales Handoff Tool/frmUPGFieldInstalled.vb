@@ -14,4 +14,9 @@
         Me.Hide()
     End Sub
 
+    Private Sub CheckBox45_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox45.CheckedChanged
+        Dim dummy As MsgBoxResult
+        dummy = MsgBox("What don't you understand about the word Never", vbOKOnly, "FST")
+
+    End Sub
 End Class

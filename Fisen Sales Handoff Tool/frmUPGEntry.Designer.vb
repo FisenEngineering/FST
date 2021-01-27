@@ -160,6 +160,8 @@ Partial Class frmUPGEntry
         Me.txtNominalTons = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.txtRefrigerant = New System.Windows.Forms.TextBox()
+        Me.opt1Phase = New System.Windows.Forms.RadioButton()
+        Me.opt3Phasex = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -1210,6 +1212,8 @@ Partial Class frmUPGEntry
         '
         'GroupBox6
         '
+        Me.GroupBox6.Controls.Add(Me.opt3Phasex)
+        Me.GroupBox6.Controls.Add(Me.opt1Phase)
         Me.GroupBox6.Controls.Add(Me.cmbVolts)
         Me.GroupBox6.Controls.Add(Me.Label24)
         Me.GroupBox6.Controls.Add(Me.Label58)
@@ -1218,7 +1222,7 @@ Partial Class frmUPGEntry
         Me.GroupBox6.Controls.Add(Me.txtMCA)
         Me.GroupBox6.Location = New System.Drawing.Point(699, 12)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(223, 113)
+        Me.GroupBox6.Size = New System.Drawing.Size(223, 156)
         Me.GroupBox6.TabIndex = 5
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Electrical Data"
@@ -1244,7 +1248,7 @@ Partial Class frmUPGEntry
         '
         'Label58
         '
-        Me.Label58.Location = New System.Drawing.Point(9, 48)
+        Me.Label58.Location = New System.Drawing.Point(9, 96)
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(121, 13)
         Me.Label58.TabIndex = 6
@@ -1253,7 +1257,7 @@ Partial Class frmUPGEntry
         '
         'txtMOP
         '
-        Me.txtMOP.Location = New System.Drawing.Point(136, 71)
+        Me.txtMOP.Location = New System.Drawing.Point(136, 119)
         Me.txtMOP.Name = "txtMOP"
         Me.txtMOP.Size = New System.Drawing.Size(65, 20)
         Me.txtMOP.TabIndex = 2
@@ -1262,7 +1266,7 @@ Partial Class frmUPGEntry
         '
         'Label59
         '
-        Me.Label59.Location = New System.Drawing.Point(9, 74)
+        Me.Label59.Location = New System.Drawing.Point(9, 122)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(121, 13)
         Me.Label59.TabIndex = 4
@@ -1271,7 +1275,7 @@ Partial Class frmUPGEntry
         '
         'txtMCA
         '
-        Me.txtMCA.Location = New System.Drawing.Point(136, 45)
+        Me.txtMCA.Location = New System.Drawing.Point(136, 93)
         Me.txtMCA.Name = "txtMCA"
         Me.txtMCA.Size = New System.Drawing.Size(65, 20)
         Me.txtMCA.TabIndex = 1
@@ -1511,7 +1515,7 @@ Partial Class frmUPGEntry
         Me.GroupBox8.Controls.Add(Me.txtNominalTons)
         Me.GroupBox8.Controls.Add(Me.Label21)
         Me.GroupBox8.Controls.Add(Me.txtRefrigerant)
-        Me.GroupBox8.Location = New System.Drawing.Point(699, 131)
+        Me.GroupBox8.Location = New System.Drawing.Point(699, 174)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(223, 113)
         Me.GroupBox8.TabIndex = 6
@@ -1553,6 +1557,28 @@ Partial Class frmUPGEntry
         Me.txtRefrigerant.TabIndex = 0
         Me.txtRefrigerant.Text = "R410A"
         Me.txtRefrigerant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'opt1Phase
+        '
+        Me.opt1Phase.AutoSize = True
+        Me.opt1Phase.Location = New System.Drawing.Point(114, 48)
+        Me.opt1Phase.Name = "opt1Phase"
+        Me.opt1Phase.Size = New System.Drawing.Size(87, 17)
+        Me.opt1Phase.TabIndex = 10
+        Me.opt1Phase.Text = "Single Phase"
+        Me.opt1Phase.UseVisualStyleBackColor = True
+        '
+        'opt3Phasex
+        '
+        Me.opt3Phasex.AutoSize = True
+        Me.opt3Phasex.Checked = True
+        Me.opt3Phasex.Location = New System.Drawing.Point(114, 70)
+        Me.opt3Phasex.Name = "opt3Phasex"
+        Me.opt3Phasex.Size = New System.Drawing.Size(86, 17)
+        Me.opt3Phasex.TabIndex = 11
+        Me.opt3Phasex.TabStop = True
+        Me.opt3Phasex.Text = "Three Phase"
+        Me.opt3Phasex.UseVisualStyleBackColor = True
         '
         'frmUPGEntry
         '
@@ -1732,4 +1758,6 @@ Partial Class frmUPGEntry
     Friend WithEvents Label24 As Label
     Friend WithEvents cmbReheatStyle As ComboBox
     Friend WithEvents cmdBelt As Button
+    Friend WithEvents opt3Phasex As RadioButton
+    Friend WithEvents opt1Phase As RadioButton
 End Class

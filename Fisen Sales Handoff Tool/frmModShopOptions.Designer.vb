@@ -31,6 +31,8 @@ Partial Class frmModShopOptions
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'CheckBox3
@@ -122,12 +124,34 @@ Partial Class frmModShopOptions
         Me.CheckBox7.Text = "Mod Option - VFD Grounding Ring"
         Me.CheckBox7.UseVisualStyleBackColor = True
         '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Location = New System.Drawing.Point(12, 173)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(217, 17)
+        Me.CheckBox8.TabIndex = 103
+        Me.CheckBox8.Text = "Mod Option - Overflow Drain Pan Switch"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Location = New System.Drawing.Point(12, 196)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(214, 17)
+        Me.CheckBox9.TabIndex = 104
+        Me.CheckBox9.Text = "Mod Option - Dual Enthalpy Economizer"
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
         'frmModShopOptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 265)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox9)
+        Me.Controls.Add(Me.CheckBox8)
         Me.Controls.Add(Me.CheckBox7)
         Me.Controls.Add(Me.CheckBox6)
         Me.Controls.Add(Me.CheckBox5)
@@ -154,4 +178,6 @@ Partial Class frmModShopOptions
     Friend WithEvents CheckBox5 As CheckBox
     Friend WithEvents CheckBox6 As CheckBox
     Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents CheckBox9 As CheckBox
 End Class
