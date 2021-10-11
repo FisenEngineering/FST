@@ -100,7 +100,6 @@ Partial Class frmMain
         Me.grpUnitStyle.Controls.Add(Me.optSeries12)
         Me.grpUnitStyle.Controls.Add(Me.optSeries10)
         Me.grpUnitStyle.Controls.Add(Me.optSeries5)
-        Me.grpUnitStyle.Enabled = False
         Me.grpUnitStyle.Location = New System.Drawing.Point(12, 282)
         Me.grpUnitStyle.Name = "grpUnitStyle"
         Me.grpUnitStyle.Size = New System.Drawing.Size(517, 140)

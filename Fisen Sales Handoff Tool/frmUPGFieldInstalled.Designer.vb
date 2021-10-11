@@ -90,6 +90,7 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox64 = New System.Windows.Forms.CheckBox()
         Me.CheckBox65 = New System.Windows.Forms.CheckBox()
         Me.CheckBox66 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox67 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -771,12 +772,23 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox66.Text = "Filter/Frame Kit Small Footprint"
         Me.CheckBox66.UseVisualStyleBackColor = True
         '
+        'CheckBox67
+        '
+        Me.CheckBox67.AutoSize = True
+        Me.CheckBox67.Location = New System.Drawing.Point(12, 127)
+        Me.CheckBox67.Name = "CheckBox67"
+        Me.CheckBox67.Size = New System.Drawing.Size(154, 17)
+        Me.CheckBox67.TabIndex = 115
+        Me.CheckBox67.Text = "Belt for Field Installed Drive"
+        Me.CheckBox67.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox67)
         Me.Controls.Add(Me.CheckBox66)
         Me.Controls.Add(Me.CheckBox65)
         Me.Controls.Add(Me.CheckBox64)
@@ -922,4 +934,5 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox64 As CheckBox
     Friend WithEvents CheckBox65 As CheckBox
     Friend WithEvents CheckBox66 As CheckBox
+    Friend WithEvents CheckBox67 As CheckBox
 End Class

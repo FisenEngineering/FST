@@ -147,6 +147,8 @@ Partial Class frmYLAAUnitEntry
         Me.txtPIN20 = New System.Windows.Forms.TextBox()
         Me.lblPINA = New System.Windows.Forms.Label()
         Me.txtPIN10 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtIPLV = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -317,6 +319,8 @@ Partial Class frmYLAAUnitEntry
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.txtIPLV)
         Me.GroupBox3.Controls.Add(Me.cmdPointLoads)
         Me.GroupBox3.Controls.Add(Me.Label51)
         Me.GroupBox3.Controls.Add(Me.txtTPD)
@@ -370,7 +374,7 @@ Partial Class frmYLAAUnitEntry
         Me.cmdPointLoads.Location = New System.Drawing.Point(766, 148)
         Me.cmdPointLoads.Name = "cmdPointLoads"
         Me.cmdPointLoads.Size = New System.Drawing.Size(29, 23)
-        Me.cmdPointLoads.TabIndex = 70
+        Me.cmdPointLoads.TabIndex = 21
         Me.cmdPointLoads.Text = "..."
         Me.cmdPointLoads.UseVisualStyleBackColor = True
         '
@@ -424,7 +428,7 @@ Partial Class frmYLAAUnitEntry
         Me.txtRefCharge.Location = New System.Drawing.Point(695, 174)
         Me.txtRefCharge.Name = "txtRefCharge"
         Me.txtRefCharge.Size = New System.Drawing.Size(65, 20)
-        Me.txtRefCharge.TabIndex = 20
+        Me.txtRefCharge.TabIndex = 22
         Me.txtRefCharge.Text = "-"
         Me.txtRefCharge.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -451,7 +455,7 @@ Partial Class frmYLAAUnitEntry
         Me.txtOpWeight.Location = New System.Drawing.Point(695, 148)
         Me.txtOpWeight.Name = "txtOpWeight"
         Me.txtOpWeight.Size = New System.Drawing.Size(65, 20)
-        Me.txtOpWeight.TabIndex = 19
+        Me.txtOpWeight.TabIndex = 20
         Me.txtOpWeight.Text = "-"
         Me.txtOpWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -460,7 +464,7 @@ Partial Class frmYLAAUnitEntry
         Me.txtRigWeight.Location = New System.Drawing.Point(695, 122)
         Me.txtRigWeight.Name = "txtRigWeight"
         Me.txtRigWeight.Size = New System.Drawing.Size(65, 20)
-        Me.txtRigWeight.TabIndex = 18
+        Me.txtRigWeight.TabIndex = 19
         Me.txtRigWeight.Text = "-"
         Me.txtRigWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -475,7 +479,7 @@ Partial Class frmYLAAUnitEntry
         '
         'Label21
         '
-        Me.Label21.Location = New System.Drawing.Point(568, 51)
+        Me.Label21.Location = New System.Drawing.Point(568, 77)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(121, 13)
         Me.Label21.TabIndex = 57
@@ -484,10 +488,10 @@ Partial Class frmYLAAUnitEntry
         '
         'txtNPLV
         '
-        Me.txtNPLV.Location = New System.Drawing.Point(695, 48)
+        Me.txtNPLV.Location = New System.Drawing.Point(695, 74)
         Me.txtNPLV.Name = "txtNPLV"
         Me.txtNPLV.Size = New System.Drawing.Size(65, 20)
-        Me.txtNPLV.TabIndex = 17
+        Me.txtNPLV.TabIndex = 18
         Me.txtNPLV.Text = "-"
         Me.txtNPLV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1408,6 +1412,24 @@ Partial Class frmYLAAUnitEntry
         Me.txtPIN10.TabIndex = 0
         Me.txtPIN10.Text = "-"
         '
+        'Label6
+        '
+        Me.Label6.Location = New System.Drawing.Point(568, 51)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(121, 13)
+        Me.Label6.TabIndex = 72
+        Me.Label6.Text = "IPLV.IP"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtIPLV
+        '
+        Me.txtIPLV.Location = New System.Drawing.Point(695, 48)
+        Me.txtIPLV.Name = "txtIPLV"
+        Me.txtIPLV.Size = New System.Drawing.Size(65, 20)
+        Me.txtIPLV.TabIndex = 17
+        Me.txtIPLV.Text = "-"
+        Me.txtIPLV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
         'frmYLAAUnitEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1565,4 +1587,6 @@ Partial Class frmYLAAUnitEntry
     Friend WithEvents Label51 As Label
     Friend WithEvents txtTPD As TextBox
     Friend WithEvents cmdPointLoads As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents txtIPLV As TextBox
 End Class

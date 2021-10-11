@@ -127,6 +127,12 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox100 = New System.Windows.Forms.CheckBox()
         Me.CheckBox101 = New System.Windows.Forms.CheckBox()
         Me.CheckBox102 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox103 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox104 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox105 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox106 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox107 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox108 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -643,7 +649,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox50
         '
         Me.CheckBox50.AutoSize = True
-        Me.CheckBox50.Location = New System.Drawing.Point(1164, 449)
+        Me.CheckBox50.Location = New System.Drawing.Point(1164, 473)
         Me.CheckBox50.Name = "CheckBox50"
         Me.CheckBox50.Size = New System.Drawing.Size(199, 17)
         Me.CheckBox50.TabIndex = 64
@@ -723,7 +729,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox58
         '
         Me.CheckBox58.AutoSize = True
-        Me.CheckBox58.Location = New System.Drawing.Point(1164, 473)
+        Me.CheckBox58.Location = New System.Drawing.Point(1164, 497)
         Me.CheckBox58.Name = "CheckBox58"
         Me.CheckBox58.Size = New System.Drawing.Size(109, 17)
         Me.CheckBox58.TabIndex = 71
@@ -733,7 +739,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox59
         '
         Me.CheckBox59.AutoSize = True
-        Me.CheckBox59.Location = New System.Drawing.Point(1164, 496)
+        Me.CheckBox59.Location = New System.Drawing.Point(1164, 520)
         Me.CheckBox59.Name = "CheckBox59"
         Me.CheckBox59.Size = New System.Drawing.Size(164, 17)
         Me.CheckBox59.TabIndex = 72
@@ -783,7 +789,7 @@ Partial Class frmUPGFIOPEntry
         'CheckBox64
         '
         Me.CheckBox64.AutoSize = True
-        Me.CheckBox64.Location = New System.Drawing.Point(1164, 519)
+        Me.CheckBox64.Location = New System.Drawing.Point(1164, 543)
         Me.CheckBox64.Name = "CheckBox64"
         Me.CheckBox64.Size = New System.Drawing.Size(269, 17)
         Me.CheckBox64.TabIndex = 77
@@ -1171,6 +1177,66 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox102.Text = "Louvered Hail Guards"
         Me.CheckBox102.UseVisualStyleBackColor = True
         '
+        'CheckBox103
+        '
+        Me.CheckBox103.AutoSize = True
+        Me.CheckBox103.Location = New System.Drawing.Point(435, 141)
+        Me.CheckBox103.Name = "CheckBox103"
+        Me.CheckBox103.Size = New System.Drawing.Size(97, 17)
+        Me.CheckBox103.TabIndex = 116
+        Me.CheckBox103.Text = "Service Valves"
+        Me.CheckBox103.UseVisualStyleBackColor = True
+        '
+        'CheckBox104
+        '
+        Me.CheckBox104.AutoSize = True
+        Me.CheckBox104.Location = New System.Drawing.Point(255, 162)
+        Me.CheckBox104.Name = "CheckBox104"
+        Me.CheckBox104.Size = New System.Drawing.Size(119, 17)
+        Me.CheckBox104.TabIndex = 117
+        Me.CheckBox104.Text = "54kW Electric Heat"
+        Me.CheckBox104.UseVisualStyleBackColor = True
+        '
+        'CheckBox105
+        '
+        Me.CheckBox105.AutoSize = True
+        Me.CheckBox105.Location = New System.Drawing.Point(255, 208)
+        Me.CheckBox105.Name = "CheckBox105"
+        Me.CheckBox105.Size = New System.Drawing.Size(119, 17)
+        Me.CheckBox105.TabIndex = 118
+        Me.CheckBox105.Text = "72kW Electric Heat"
+        Me.CheckBox105.UseVisualStyleBackColor = True
+        '
+        'CheckBox106
+        '
+        Me.CheckBox106.AutoSize = True
+        Me.CheckBox106.Location = New System.Drawing.Point(18, 482)
+        Me.CheckBox106.Name = "CheckBox106"
+        Me.CheckBox106.Size = New System.Drawing.Size(166, 17)
+        Me.CheckBox106.TabIndex = 119
+        Me.CheckBox106.Text = "Verasys Change Over Bypass"
+        Me.CheckBox106.UseVisualStyleBackColor = True
+        '
+        'CheckBox107
+        '
+        Me.CheckBox107.AutoSize = True
+        Me.CheckBox107.Location = New System.Drawing.Point(1164, 450)
+        Me.CheckBox107.Name = "CheckBox107"
+        Me.CheckBox107.Size = New System.Drawing.Size(191, 17)
+        Me.CheckBox107.TabIndex = 120
+        Me.CheckBox107.Text = "Econ Hoods - No Barometric Relief"
+        Me.CheckBox107.UseVisualStyleBackColor = True
+        '
+        'CheckBox108
+        '
+        Me.CheckBox108.AutoSize = True
+        Me.CheckBox108.Location = New System.Drawing.Point(978, 376)
+        Me.CheckBox108.Name = "CheckBox108"
+        Me.CheckBox108.Size = New System.Drawing.Size(170, 17)
+        Me.CheckBox108.TabIndex = 121
+        Me.CheckBox108.Text = "Supply Fan Shaft Ground Ring"
+        Me.CheckBox108.UseVisualStyleBackColor = True
+        '
         'frmUPGFIOPEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1178,6 +1244,12 @@ Partial Class frmUPGFIOPEntry
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(1486, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox108)
+        Me.Controls.Add(Me.CheckBox107)
+        Me.Controls.Add(Me.CheckBox106)
+        Me.Controls.Add(Me.CheckBox105)
+        Me.Controls.Add(Me.CheckBox104)
+        Me.Controls.Add(Me.CheckBox103)
         Me.Controls.Add(Me.CheckBox102)
         Me.Controls.Add(Me.CheckBox101)
         Me.Controls.Add(Me.CheckBox100)
@@ -1396,4 +1468,10 @@ Partial Class frmUPGFIOPEntry
     Friend WithEvents CheckBox100 As CheckBox
     Friend WithEvents CheckBox101 As CheckBox
     Friend WithEvents CheckBox102 As CheckBox
+    Friend WithEvents CheckBox103 As CheckBox
+    Friend WithEvents CheckBox104 As CheckBox
+    Friend WithEvents CheckBox105 As CheckBox
+    Friend WithEvents CheckBox106 As CheckBox
+    Friend WithEvents CheckBox107 As CheckBox
+    Friend WithEvents CheckBox108 As CheckBox
 End Class

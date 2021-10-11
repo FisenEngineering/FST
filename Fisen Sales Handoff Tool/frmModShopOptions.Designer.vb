@@ -33,6 +33,7 @@ Partial Class frmModShopOptions
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'CheckBox3
@@ -68,7 +69,7 @@ Partial Class frmModShopOptions
         'cmdCancel
         '
         Me.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cmdCancel.Location = New System.Drawing.Point(280, 221)
+        Me.cmdCancel.Location = New System.Drawing.Point(280, 279)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(90, 32)
         Me.cmdCancel.TabIndex = 98
@@ -77,7 +78,7 @@ Partial Class frmModShopOptions
         '
         'cmdOK
         '
-        Me.cmdOK.Location = New System.Drawing.Point(184, 221)
+        Me.cmdOK.Location = New System.Drawing.Point(184, 279)
         Me.cmdOK.Name = "cmdOK"
         Me.cmdOK.Size = New System.Drawing.Size(90, 32)
         Me.cmdOK.TabIndex = 97
@@ -144,12 +145,23 @@ Partial Class frmModShopOptions
         Me.CheckBox9.Text = "Mod Option - Dual Enthalpy Economizer"
         Me.CheckBox9.UseVisualStyleBackColor = True
         '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(12, 219)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(136, 17)
+        Me.CheckBox10.TabIndex = 105
+        Me.CheckBox10.Text = "Mod Option - UV Lights"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
         'frmModShopOptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 265)
+        Me.ClientSize = New System.Drawing.Size(382, 323)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox10)
         Me.Controls.Add(Me.CheckBox9)
         Me.Controls.Add(Me.CheckBox8)
         Me.Controls.Add(Me.CheckBox7)
@@ -180,4 +192,5 @@ Partial Class frmModShopOptions
     Friend WithEvents CheckBox7 As CheckBox
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents CheckBox9 As CheckBox
+    Friend WithEvents CheckBox10 As CheckBox
 End Class

@@ -314,7 +314,6 @@ Public Class frmMain
         UnitWriter.WriteEndElement() 'BaseUnit    
         UnitWriter.Close()
 
-        UnitWriter = Nothing
     End Sub
     Private Sub WriteHWCoilConditions(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
         lUnitWriter.WriteStartElement("HWCoil")
@@ -459,6 +458,10 @@ Public Class frmMain
     Private Sub WriteYLAAPerformanceData(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
         lUnitWriter.WriteStartElement("EER")
         lUnitWriter.WriteString(frmYLAAUnitEntry.txtEER.Text)
+        lUnitWriter.WriteEndElement()
+
+        lUnitWriter.WriteStartElement("IPLV")
+        lUnitWriter.WriteString(frmYLAAUnitEntry.txtIPLV.Text)
         lUnitWriter.WriteEndElement()
 
         lUnitWriter.WriteStartElement("NPLV")
@@ -2671,7 +2674,8 @@ Public Class frmMain
         txtUnitDirectory.Text = FolderBrowserDialog1.SelectedPath
         txtBaseUnitFile.Text = txtUnitDirectory.Text & "\" & txtJobNumber.Text & "-" & txtUnitNum.Text & "\Submittal Source (Do not Distribute)\Submittal Design\BaseUnitFile.xml"
         txtUnitRootDirectory.Text = txtUnitDirectory.Text & "\" & txtJobNumber.Text & "-" & txtUnitNum.Text
-        grpUnitStyle.Enabled = True
+
+
     End Sub
 
     Private Function ValidateJobNumber() As Boolean
@@ -2849,11 +2853,9 @@ Public Class frmMain
     Private Function ValidateFamily() As Boolean
         Dim Dummy As MsgBoxResult
         Dim AOK As Boolean
-        Dim i As Integer
 
         Dim MissingFileMessage As String
 
-        AOK = True
         MissingFileMessage = "You must choose a unit family."
 
         AOK = optSeries5.Checked Or optSeries10.Checked Or optSeries20.Checked Or optSeries40.Checked Or optSeriesLX.Checked Or optSeries100.Checked Or optSeries12.Checked Or optYVAA.Checked Or optYCAL.Checked Or optYLAA.Checked Or optSolution.Checked Or optOther.Checked Or optChoice.Checked Or optPremier.Checked Or optSelect.Checked
@@ -3248,7 +3250,6 @@ Public Class frmMain
         Dim ItsANumber As Boolean
         Dim ItEndsInNumber As Boolean
 
-
         MyString = txtJobNumber.Text
         If MyString = "" Then Exit Sub
         ItsANumber = IsNumeric(MyString)
@@ -3257,16 +3258,53 @@ Public Class frmMain
         If ItsANumber And ItEndsInNumber And (Len(MyString) = 4) Then
             txtJobNumber.Text = txtJobNumber.Text & "F"
         End If
-
+        Call ConstructProjDirGuess()
     End Sub
 
-    Private Sub txtTag_TextChanged(sender As Object, e As EventArgs) Handles txtTag.TextChanged
+    Private Sub ConstructProjDirGuess()
+        Dim temp As String
+        Dim numpart As String
 
+        numpart = Trim(txtJobNumber.Text)
+        If Len(numpart) < 4 Then
+            Exit Sub
+        End If
+        numpart = Mid(numpart, 1, 4)
+        If Not (IsNumeric(numpart)) Then
+            Exit Sub
+        End If
+
+        If Val(numpart) < 3000 Then
+            Exit Sub
+        End If
+
+        If txtJobNumber.Text <> "BODF" Then
+            temp = "J:\" & Mid(txtJobNumber.Text, 1, 2)
+            If Val(Mid(txtJobNumber.Text, 3, 2)) < 50 Then
+                temp = temp & "00-" & Mid(txtJobNumber.Text, 1, 2) & "49\"
+            Else
+                temp = temp & "50-" & Mid(txtJobNumber.Text, 1, 2) & "99\"
+
+            End If
+
+            For Each founddirectory In My.Computer.FileSystem.GetDirectories(temp, FileIO.SearchOption.SearchTopLevelOnly, "*" & txtJobNumber.Text & "*")
+                txtUnitDirectory.Text = founddirectory
+            Next
+        End If
+    End Sub
+
+    Private Sub ConstructUnitDirectoryGuess()
+        If txtUnitNum.Text = "" Then Exit Sub
+        If Not (IsNumeric(txtUnitNum.Text)) Then Exit Sub
+        txtUnitRootDirectory.Text = txtUnitDirectory.Text & "\" & txtJobNumber.Text & "-" & txtUnitNum.Text
+        txtBaseUnitFile.Text = txtUnitDirectory.Text & "\" & txtJobNumber.Text & "-" & txtUnitNum.Text & "\Submittal Source (Do not Distribute)\Submittal Design\BaseUnitFile.xml"
     End Sub
 
     Private Sub txtTag_Leave(sender As Object, e As EventArgs) Handles txtTag.Leave
         If txtTag.Text = "" Then txtTag.Text = "Untagged"
     End Sub
 
-
+    Private Sub txtUnitNum_Leave(sender As Object, e As EventArgs) Handles txtUnitNum.Leave
+        Call ConstructUnitDirectoryGuess()
+    End Sub
 End Class
