@@ -63,10 +63,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AD0BC5CD7B87EC161F5AB28FF4F833ADB61A51B2</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>4AD94780AB226034B93ECA976BE2F858167EDA37</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Fisen Sales Handoff Tool_3_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Fisen Sales Handoff Tool_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -293,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Fisen Sales Handoff Tool_3_TemporaryKey.pfx" />
+    <None Include="Fisen Sales Handoff Tool_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
