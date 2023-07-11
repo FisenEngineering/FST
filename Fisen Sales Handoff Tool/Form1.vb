@@ -2,6 +2,7 @@
 Imports System.IO
 Imports System.CodeDom.Compiler
 
+
 Public Class frmMain
     Public MySecurity As New ClsSecurity
 
@@ -10,7 +11,21 @@ Public Class frmMain
     Private pbprq As Boolean
     Private pSolutionname As String
     Public ModShopOptionsPresent As Boolean
+    Private pGenus As String
+    Private pNomTons As String
 
+    Public ReadOnly Property Genus As String
+        Get
+            Return MyGenus()
+        End Get
+
+    End Property
+
+    Public ReadOnly Property NomTons
+        Get
+            Return MyNomTons()
+        End Get
+    End Property
     Public Property SlnName As String
         Get
             Return "Fisen Sales Handoff Tool"
@@ -27,6 +42,47 @@ Public Class frmMain
             pbprq = value
         End Set
     End Property
+
+    Private Function MyGenus()
+        Dim lModNum As String
+        Dim lMyGenus As String
+
+        lModNum = txtBrandModelNum.Text
+
+        Select Case Family()
+            Case Is = "Series10"
+                lMyGenus = Mid(lModNum, 1, 2)
+            Case Else
+                lMyGenus = "Unknown"
+        End Select
+
+        Return lMyGenus
+
+    End Function
+
+    Private Function MyNomTons()
+        Dim lModNum As String
+        Dim LNomTons As String
+        Dim lBTUs As String
+        lModNum = txtBrandModelNum.Text
+        Select Case Family()
+            Case Is = "Series10"
+                lBTUs = Mid(lModNum, 3, 3)
+                Select Case lBTUs
+                    Case Is = "150"
+                        LNomTons = "12.5"
+                    Case Is = "049"
+                        LNomTons = "4"
+                    Case Is = "037"
+                        LNomTons = "3"
+                    Case Else
+                        LNomTons = "Unknown"
+                End Select
+            Case Else
+                LNomTons = "Unknown"
+        End Select
+        Return LNomTons
+    End Function
     Private Sub cmdEnterPerformance_Click(sender As Object, e As EventArgs) Handles cmdEnterPerformance.Click
         Dim CanX As Boolean
         CanX = False
@@ -302,6 +358,13 @@ Public Class frmMain
         UnitWriter.WriteEndElement() 'AuxPerformance
 
         '***
+        UnitWriter.WriteStartElement("Certifications")
+        If UPGUnit() Then Call WriteCertifications(UnitWriter, myXMLSettings)
+        UnitWriter.WriteEndElement() 'Certifications
+        '***
+
+
+
         UnitWriter.WriteStartElement("Modifications")
         For i = 0 To lstMods.SelectedItems.Count - 1
             Select Case lstMods.SelectedItems.Item(i)
@@ -313,6 +376,59 @@ Public Class frmMain
 
         UnitWriter.WriteEndElement() 'BaseUnit    
         UnitWriter.Close()
+
+    End Sub
+    Private Sub WriteCertifications(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
+        If frmUPGCertsEntry.chkASHRAE90_1.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("ASHRAE 90.1")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkISO9001.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("ISO 9001")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkCSADesign.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("CSA Design")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkAHRICert.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("AHRI")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkCSA_C_US.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("CSA Canada")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkETL_C_US.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("ETL Canada")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkCSAGas.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("CSA Gas")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkETL.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("ETL")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkAmericanQ.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("American Quality")
+            lUnitWriter.WriteEndElement()
+        End If
+        If frmUPGCertsEntry.chkEnergyStar.Checked Then
+            lUnitWriter.WriteStartElement("Cert")
+            lUnitWriter.WriteString("Energy Star")
+            lUnitWriter.WriteEndElement()
+        End If
 
     End Sub
     Private Sub WriteHWCoilConditions(lUnitWriter As XmlWriter, lsettings As XmlWriterSettings)
@@ -2965,24 +3081,9 @@ Public Class frmMain
     End Sub
 
     Private Sub txtDebug_Click(sender As Object, e As EventArgs) Handles txtDebug.Click
-        'txtJobNumber.Text = "3348F"
-        'txtUnitNum.Text = "01"
-        'txtProjectName.Text = "501 Seventeen"
-        'txtQty.Text = "1"
-        'txtTag.Text = "RTU-4"
-        'txtBrandModelNum.Text = "J20ZRC00P4C2BCA5L1"
-        'txtUnitDirectory.Text = "J:\"
-        'txtUnitRootDirectory.Text = ""
-        'txtBaseUnitFile.Text = ""
+        Dim dummy As MsgBoxResult
 
-        Dim dummy As String
-        Dim dummy2 As MsgBoxResult
-        dummy = InputBox("Enter Today's Code:")
-        If MySecurity.BypassOK(MySecurity.Date2Julian(Now), dummy) Then
-            dummy2 = MsgBox("Yes")
-        Else
-            dummy2 = MsgBox("No")
-        End If
+        dummy = MsgBox("No debug options set.", vbOKOnly)
 
 
     End Sub
@@ -3307,4 +3408,5 @@ Public Class frmMain
     Private Sub txtUnitNum_Leave(sender As Object, e As EventArgs) Handles txtUnitNum.Leave
         Call ConstructUnitDirectoryGuess()
     End Sub
+
 End Class

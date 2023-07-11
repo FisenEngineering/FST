@@ -11,9 +11,10 @@
     <AssemblyName>Fisen Sales Handoff Tool</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>\\filesrvr\shared\Engineering\FST\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
@@ -24,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>71</ApplicationRevision>
+    <ApplicationRevision>72</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -72,7 +73,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>fsticon.ico</ApplicationIcon>
@@ -81,7 +82,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>Fisen Sales Handoff Tool_3_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
@@ -156,6 +157,12 @@
     <Compile Include="frmRFan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmUPGCertsEntry.Designer.vb">
+      <DependentUpon>frmUPGCertsEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUPGCertsEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmUPGEntry.Designer.vb">
       <DependentUpon>frmUPGEntry.vb</DependentUpon>
     </Compile>
@@ -220,6 +227,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -253,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRFan.resx">
       <DependentUpon>frmRFan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUPGCertsEntry.resx">
+      <DependentUpon>frmUPGCertsEntry.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUPGEntry.resx">
       <DependentUpon>frmUPGEntry.vb</DependentUpon>

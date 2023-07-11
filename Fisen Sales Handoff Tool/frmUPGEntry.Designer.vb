@@ -24,6 +24,7 @@ Partial Class frmUPGEntry
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUPGEntry))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmdPasteCooling = New System.Windows.Forms.Button()
         Me.txtCoolSoundPower = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -45,6 +46,7 @@ Partial Class frmUPGEntry
         Me.txtCoolSCap = New System.Windows.Forms.TextBox()
         Me.txtCoolTCap = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.cmdPasteReheat = New System.Windows.Forms.Button()
         Me.cmbReheatStyle = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -63,6 +65,7 @@ Partial Class frmUPGEntry
         Me.txtReheatAmbient = New System.Windows.Forms.TextBox()
         Me.txtReheatTCap = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cmdPasteHeating = New System.Windows.Forms.Button()
         Me.cmbHeatType = New System.Windows.Forms.ComboBox()
         Me.txtHeatLine9 = New System.Windows.Forms.TextBox()
         Me.lblHeatLine9 = New System.Windows.Forms.Label()
@@ -83,6 +86,7 @@ Partial Class frmUPGEntry
         Me.lblHeatLine2 = New System.Windows.Forms.Label()
         Me.txtHeatLine1 = New System.Windows.Forms.TextBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.cmdPasteSFan = New System.Windows.Forms.Button()
         Me.cmdBelt = New System.Windows.Forms.Button()
         Me.txtSFanDriveType = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
@@ -126,6 +130,8 @@ Partial Class frmUPGEntry
         Me.txtRXFanESP = New System.Windows.Forms.TextBox()
         Me.txtRXFanAFlow = New System.Windows.Forms.TextBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.opt3Phasex = New System.Windows.Forms.RadioButton()
+        Me.opt1Phase = New System.Windows.Forms.RadioButton()
         Me.cmbVolts = New System.Windows.Forms.ComboBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label58 = New System.Windows.Forms.Label()
@@ -160,8 +166,6 @@ Partial Class frmUPGEntry
         Me.txtNominalTons = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.txtRefrigerant = New System.Windows.Forms.TextBox()
-        Me.opt1Phase = New System.Windows.Forms.RadioButton()
-        Me.opt3Phasex = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -174,6 +178,7 @@ Partial Class frmUPGEntry
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cmdPasteCooling)
         Me.GroupBox1.Controls.Add(Me.txtCoolSoundPower)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -200,6 +205,15 @@ Partial Class frmUPGEntry
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cooling Performance"
+        '
+        'cmdPasteCooling
+        '
+        Me.cmdPasteCooling.Location = New System.Drawing.Point(6, 254)
+        Me.cmdPasteCooling.Name = "cmdPasteCooling"
+        Me.cmdPasteCooling.Size = New System.Drawing.Size(25, 25)
+        Me.cmdPasteCooling.TabIndex = 10
+        Me.cmdPasteCooling.Text = "P"
+        Me.cmdPasteCooling.UseVisualStyleBackColor = True
         '
         'txtCoolSoundPower
         '
@@ -383,6 +397,7 @@ Partial Class frmUPGEntry
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.cmdPasteReheat)
         Me.GroupBox2.Controls.Add(Me.cmbReheatStyle)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label13)
@@ -406,6 +421,15 @@ Partial Class frmUPGEntry
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Reheat Performance"
+        '
+        'cmdPasteReheat
+        '
+        Me.cmdPasteReheat.Location = New System.Drawing.Point(6, 254)
+        Me.cmdPasteReheat.Name = "cmdPasteReheat"
+        Me.cmdPasteReheat.Size = New System.Drawing.Size(25, 25)
+        Me.cmdPasteReheat.TabIndex = 20
+        Me.cmdPasteReheat.Text = "P"
+        Me.cmdPasteReheat.UseVisualStyleBackColor = True
         '
         'cmbReheatStyle
         '
@@ -571,6 +595,7 @@ Partial Class frmUPGEntry
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.cmdPasteHeating)
         Me.GroupBox3.Controls.Add(Me.cmbHeatType)
         Me.GroupBox3.Controls.Add(Me.txtHeatLine9)
         Me.GroupBox3.Controls.Add(Me.lblHeatLine9)
@@ -596,6 +621,16 @@ Partial Class frmUPGEntry
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Heating Performance"
+        '
+        'cmdPasteHeating
+        '
+        Me.cmdPasteHeating.Location = New System.Drawing.Point(6, 254)
+        Me.cmdPasteHeating.Name = "cmdPasteHeating"
+        Me.cmdPasteHeating.Size = New System.Drawing.Size(25, 25)
+        Me.cmdPasteHeating.TabIndex = 21
+        Me.cmdPasteHeating.Text = "P"
+        Me.cmdPasteHeating.UseVisualStyleBackColor = True
+        Me.cmdPasteHeating.Visible = False
         '
         'cmbHeatType
         '
@@ -771,6 +806,7 @@ Partial Class frmUPGEntry
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.cmdPasteSFan)
         Me.GroupBox4.Controls.Add(Me.cmdBelt)
         Me.GroupBox4.Controls.Add(Me.txtSFanDriveType)
         Me.GroupBox4.Controls.Add(Me.Label28)
@@ -799,9 +835,18 @@ Partial Class frmUPGEntry
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Supply Fan Performance"
         '
+        'cmdPasteSFan
+        '
+        Me.cmdPasteSFan.Location = New System.Drawing.Point(6, 254)
+        Me.cmdPasteSFan.Name = "cmdPasteSFan"
+        Me.cmdPasteSFan.Size = New System.Drawing.Size(25, 25)
+        Me.cmdPasteSFan.TabIndex = 22
+        Me.cmdPasteSFan.Text = "P"
+        Me.cmdPasteSFan.UseVisualStyleBackColor = True
+        '
         'cmdBelt
         '
-        Me.cmdBelt.Location = New System.Drawing.Point(31, 252)
+        Me.cmdBelt.Location = New System.Drawing.Point(35, 254)
         Me.cmdBelt.Name = "cmdBelt"
         Me.cmdBelt.Size = New System.Drawing.Size(36, 23)
         Me.cmdBelt.TabIndex = 9
@@ -850,7 +895,7 @@ Partial Class frmUPGEntry
         Me.txtSFanElevation.Name = "txtSFanElevation"
         Me.txtSFanElevation.Size = New System.Drawing.Size(65, 20)
         Me.txtSFanElevation.TabIndex = 8
-        Me.txtSFanElevation.Text = "-"
+        Me.txtSFanElevation.Text = "0"
         Me.txtSFanElevation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label33
@@ -922,7 +967,7 @@ Partial Class frmUPGEntry
         Me.txtSFanDuctLoc.Name = "txtSFanDuctLoc"
         Me.txtSFanDuctLoc.Size = New System.Drawing.Size(65, 20)
         Me.txtSFanDuctLoc.TabIndex = 4
-        Me.txtSFanDuctLoc.Text = "-"
+        Me.txtSFanDuctLoc.Text = "Bottom"
         Me.txtSFanDuctLoc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtSFanMaxBHP
@@ -1226,6 +1271,28 @@ Partial Class frmUPGEntry
         Me.GroupBox6.TabIndex = 5
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Electrical Data"
+        '
+        'opt3Phasex
+        '
+        Me.opt3Phasex.AutoSize = True
+        Me.opt3Phasex.Checked = True
+        Me.opt3Phasex.Location = New System.Drawing.Point(114, 70)
+        Me.opt3Phasex.Name = "opt3Phasex"
+        Me.opt3Phasex.Size = New System.Drawing.Size(86, 17)
+        Me.opt3Phasex.TabIndex = 11
+        Me.opt3Phasex.TabStop = True
+        Me.opt3Phasex.Text = "Three Phase"
+        Me.opt3Phasex.UseVisualStyleBackColor = True
+        '
+        'opt1Phase
+        '
+        Me.opt1Phase.AutoSize = True
+        Me.opt1Phase.Location = New System.Drawing.Point(114, 48)
+        Me.opt1Phase.Name = "opt1Phase"
+        Me.opt1Phase.Size = New System.Drawing.Size(87, 17)
+        Me.opt1Phase.TabIndex = 10
+        Me.opt1Phase.Text = "Single Phase"
+        Me.opt1Phase.UseVisualStyleBackColor = True
         '
         'cmbVolts
         '
@@ -1558,28 +1625,6 @@ Partial Class frmUPGEntry
         Me.txtRefrigerant.Text = "R410A"
         Me.txtRefrigerant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'opt1Phase
-        '
-        Me.opt1Phase.AutoSize = True
-        Me.opt1Phase.Location = New System.Drawing.Point(114, 48)
-        Me.opt1Phase.Name = "opt1Phase"
-        Me.opt1Phase.Size = New System.Drawing.Size(87, 17)
-        Me.opt1Phase.TabIndex = 10
-        Me.opt1Phase.Text = "Single Phase"
-        Me.opt1Phase.UseVisualStyleBackColor = True
-        '
-        'opt3Phasex
-        '
-        Me.opt3Phasex.AutoSize = True
-        Me.opt3Phasex.Checked = True
-        Me.opt3Phasex.Location = New System.Drawing.Point(114, 70)
-        Me.opt3Phasex.Name = "opt3Phasex"
-        Me.opt3Phasex.Size = New System.Drawing.Size(86, 17)
-        Me.opt3Phasex.TabIndex = 11
-        Me.opt3Phasex.TabStop = True
-        Me.opt3Phasex.Text = "Three Phase"
-        Me.opt3Phasex.UseVisualStyleBackColor = True
-        '
         'frmUPGEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1760,4 +1805,8 @@ Partial Class frmUPGEntry
     Friend WithEvents cmdBelt As Button
     Friend WithEvents opt3Phasex As RadioButton
     Friend WithEvents opt1Phase As RadioButton
+    Friend WithEvents cmdPasteCooling As Button
+    Friend WithEvents cmdPasteReheat As Button
+    Friend WithEvents cmdPasteHeating As Button
+    Friend WithEvents cmdPasteSFan As Button
 End Class

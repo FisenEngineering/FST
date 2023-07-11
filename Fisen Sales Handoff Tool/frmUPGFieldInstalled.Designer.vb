@@ -91,6 +91,8 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox65 = New System.Windows.Forms.CheckBox()
         Me.CheckBox66 = New System.Windows.Forms.CheckBox()
         Me.CheckBox67 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox68 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox69 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -315,7 +317,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox20
         '
         Me.CheckBox20.AutoSize = True
-        Me.CheckBox20.Location = New System.Drawing.Point(277, 219)
+        Me.CheckBox20.Location = New System.Drawing.Point(277, 150)
         Me.CheckBox20.Name = "CheckBox20"
         Me.CheckBox20.Size = New System.Drawing.Size(175, 17)
         Me.CheckBox20.TabIndex = 69
@@ -505,7 +507,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox40
         '
         Me.CheckBox40.AutoSize = True
-        Me.CheckBox40.Location = New System.Drawing.Point(277, 196)
+        Me.CheckBox40.Location = New System.Drawing.Point(277, 127)
         Me.CheckBox40.Name = "CheckBox40"
         Me.CheckBox40.Size = New System.Drawing.Size(151, 17)
         Me.CheckBox40.TabIndex = 88
@@ -515,7 +517,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox41
         '
         Me.CheckBox41.AutoSize = True
-        Me.CheckBox41.Location = New System.Drawing.Point(277, 173)
+        Me.CheckBox41.Location = New System.Drawing.Point(277, 104)
         Me.CheckBox41.Name = "CheckBox41"
         Me.CheckBox41.Size = New System.Drawing.Size(137, 17)
         Me.CheckBox41.TabIndex = 89
@@ -545,7 +547,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox44
         '
         Me.CheckBox44.AutoSize = True
-        Me.CheckBox44.Location = New System.Drawing.Point(277, 265)
+        Me.CheckBox44.Location = New System.Drawing.Point(277, 173)
         Me.CheckBox44.Name = "CheckBox44"
         Me.CheckBox44.Size = New System.Drawing.Size(118, 17)
         Me.CheckBox44.TabIndex = 92
@@ -755,7 +757,7 @@ Partial Class frmUPGFieldInstalled
         'CheckBox65
         '
         Me.CheckBox65.AutoSize = True
-        Me.CheckBox65.Location = New System.Drawing.Point(277, 288)
+        Me.CheckBox65.Location = New System.Drawing.Point(277, 196)
         Me.CheckBox65.Name = "CheckBox65"
         Me.CheckBox65.Size = New System.Drawing.Size(97, 17)
         Me.CheckBox65.TabIndex = 113
@@ -782,12 +784,34 @@ Partial Class frmUPGFieldInstalled
         Me.CheckBox67.Text = "Belt for Field Installed Drive"
         Me.CheckBox67.UseVisualStyleBackColor = True
         '
+        'CheckBox68
+        '
+        Me.CheckBox68.AutoSize = True
+        Me.CheckBox68.Location = New System.Drawing.Point(176, 467)
+        Me.CheckBox68.Name = "CheckBox68"
+        Me.CheckBox68.Size = New System.Drawing.Size(158, 17)
+        Me.CheckBox68.TabIndex = 116
+        Me.CheckBox68.Text = "Equipment Support 72"" x 8"""
+        Me.CheckBox68.UseVisualStyleBackColor = True
+        '
+        'CheckBox69
+        '
+        Me.CheckBox69.AutoSize = True
+        Me.CheckBox69.Location = New System.Drawing.Point(277, 293)
+        Me.CheckBox69.Name = "CheckBox69"
+        Me.CheckBox69.Size = New System.Drawing.Size(144, 17)
+        Me.CheckBox69.TabIndex = 117
+        Me.CheckBox69.Text = "CTS Wired Temp Sensor"
+        Me.CheckBox69.UseVisualStyleBackColor = True
+        '
         'frmUPGFieldInstalled
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1043, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox69)
+        Me.Controls.Add(Me.CheckBox68)
         Me.Controls.Add(Me.CheckBox67)
         Me.Controls.Add(Me.CheckBox66)
         Me.Controls.Add(Me.CheckBox65)
@@ -935,4 +959,6 @@ Partial Class frmUPGFieldInstalled
     Friend WithEvents CheckBox65 As CheckBox
     Friend WithEvents CheckBox66 As CheckBox
     Friend WithEvents CheckBox67 As CheckBox
+    Friend WithEvents CheckBox68 As CheckBox
+    Friend WithEvents CheckBox69 As CheckBox
 End Class

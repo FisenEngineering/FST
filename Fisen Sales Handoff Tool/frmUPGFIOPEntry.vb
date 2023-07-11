@@ -21,5 +21,27 @@
         Me.Hide()
     End Sub
 
+    Private Sub cmdClipboardImport_Click(sender As Object, e As EventArgs) Handles cmdClipboardImport.Click
+        Dim dummy As MsgBoxResult
+        Dim ClipText As String
+        Dim FIOPArray() As String
+        Dim i As Integer
 
+        dummy = MsgBox("Please Copy the Page 2 Options to the Clipboard", vbOKCancel, "Experimental Feature")
+        If dummy = vbCancel Then Exit Sub
+        ClipText = My.Computer.Clipboard.GetText
+        FIOPArray = Split(ClipText, vbCrLf)
+
+        For i = 0 To FIOPArray.Length - 1
+            If FIOPArray(i).Contains("Heat Type:") Then
+
+            End If
+            Debug.Print(FIOPArray(i))
+        Next
+
+
+        'Debug.Print(ClipText)
+
+
+    End Sub
 End Class

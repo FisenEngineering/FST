@@ -542,7 +542,7 @@ Partial Class frmYPALUnitEntry
         '
         Me.cmbHeatType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbHeatType.FormattingEnabled = True
-        Me.cmbHeatType.Items.AddRange(New Object() {"No Heat", "Gas Heat"})
+        Me.cmbHeatType.Items.AddRange(New Object() {"No Heat", "Gas Heat", "Electric Heat"})
         Me.cmbHeatType.Location = New System.Drawing.Point(12, 18)
         Me.cmbHeatType.Name = "cmbHeatType"
         Me.cmbHeatType.Size = New System.Drawing.Size(189, 21)

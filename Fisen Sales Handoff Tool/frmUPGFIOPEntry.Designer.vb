@@ -133,6 +133,7 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox106 = New System.Windows.Forms.CheckBox()
         Me.CheckBox107 = New System.Windows.Forms.CheckBox()
         Me.CheckBox108 = New System.Windows.Forms.CheckBox()
+        Me.cmdClipboardImport = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cmdCancel
@@ -1237,6 +1238,15 @@ Partial Class frmUPGFIOPEntry
         Me.CheckBox108.Text = "Supply Fan Shaft Ground Ring"
         Me.CheckBox108.UseVisualStyleBackColor = True
         '
+        'cmdClipboardImport
+        '
+        Me.cmdClipboardImport.Location = New System.Drawing.Point(1194, 574)
+        Me.cmdClipboardImport.Name = "cmdClipboardImport"
+        Me.cmdClipboardImport.Size = New System.Drawing.Size(88, 32)
+        Me.cmdClipboardImport.TabIndex = 122
+        Me.cmdClipboardImport.Text = "Clipboard"
+        Me.cmdClipboardImport.UseVisualStyleBackColor = True
+        '
         'frmUPGFIOPEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1244,6 +1254,7 @@ Partial Class frmUPGFIOPEntry
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(1486, 610)
         Me.ControlBox = False
+        Me.Controls.Add(Me.cmdClipboardImport)
         Me.Controls.Add(Me.CheckBox108)
         Me.Controls.Add(Me.CheckBox107)
         Me.Controls.Add(Me.CheckBox106)
@@ -1474,4 +1485,5 @@ Partial Class frmUPGFIOPEntry
     Friend WithEvents CheckBox106 As CheckBox
     Friend WithEvents CheckBox107 As CheckBox
     Friend WithEvents CheckBox108 As CheckBox
+    Friend WithEvents cmdClipboardImport As Button
 End Class
